@@ -1,0 +1,68 @@
+/* About */
+
+.about{
+    background: url("../assets/abouthero.png");
+    background-repeat: no-repeat;
+    height: 70vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 36px;
+    color: white;
+    font-weight: 500;
+}
+
+.about .content{
+    text-align: center;
+   
+}
+
+ .contentWho{
+    display: flex;
+    flex-direction: column;
+    padding: 70px 70px;
+    background: url(../assets/aboutred.png);
+    /* background-image: linear-gradient(to bottom, #DA3941, #FF4141), url('../assets/offerBack.png'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.aboutPage .contentWho .title{
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.aboutPage .contentWho .subtitle{
+    color: rgba(255, 255, 255, 0.815);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+  
+}
+.aboutPage .contentWho .subtitle p{
+margin-bottom: 20px; 
+}
+.company{
+    font-weight: 700;
+    color: white;
+}
+.Milestone{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 100px;
+}
+
+.Milestone .title{
+    color: #2A6877;
+    font-size: 40px;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 70px;
+}

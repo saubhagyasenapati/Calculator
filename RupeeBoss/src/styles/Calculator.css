@@ -1,0 +1,100 @@
+.calculator {
+  margin: 0px 50px;
+  background-color: #efefef;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.button-container div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.button-clicked {
+  background-color: #ff4141;
+  color: #ffffff;
+  transition: all 0.3s ease-in-out;
+}
+.button-notclicked {
+  color: #ff4141;
+  transition: all 0.3s ease-in-out;
+}
+.personalloanbox {
+  width: 60%;
+}
+.Mainbox {
+  padding: 30px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+  position: relative;
+
+}
+.personalbox {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+}
+.Insertion {
+  padding: 10px;
+  width: 90%;
+  margin: 20px 10px 10px 0px;
+  border-radius: 5px;
+  background-color: #efefef00;
+  border: 1.3px solid #263238;
+}
+
+.loancheckbutton {
+  padding: 10px 40px;
+  border: 1.5px solid #ff4141;
+  border-radius: 6px;
+  color: #ff4141;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+
+.loancircle {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+
+.bussinessloanbox {
+  width: 100%;
+}
+.bussinessbox {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.homeloanbox {
+  width: 100%;
+}
+.homebox {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.component-container{
+    transition: opacity 1s ease-in-out;
+}
+
+.titleCal{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight:600 ;
+}
+
+.CalculatorBox{
+    margin-bottom: 70px;
+}

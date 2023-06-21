@@ -1,0 +1,586 @@
+/* Navbar */
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 10vh;
+  position: relative;
+  top: 0;
+  padding: 25px;
+  font-family: "Inter", sans-serif;
+}
+.logo img {
+  width: 123px;
+  height: 30px;
+  margin-left: 20px;
+  margin-right: 90px;
+}
+.navbarLeft {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+
+  align-items: center;
+}
+
+.navbarRight {
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+}
+
+.navbarRight div {
+  margin: 0 15px;
+}
+.navbarRight button {
+  background-color: #FF4141;
+  padding: 12px;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  font-family: "Inter", sans-serif;
+}
+
+.navbarRight button:hover{
+  background-color: #e63e3e;
+  transition: all 0.1s ease-in-out;
+  scale: 1.02;
+}
+.menu ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.menu ul a{
+  color: #343434;
+  text-decoration: none;
+}
+/* Home */
+
+.home {
+  display: flex;
+  margin: 0px 50px;
+  line-height: 1.2;
+  align-items: center;
+}
+.homeText {
+  display: flex;
+  flex-direction: column;
+  flex:0.9
+}
+.home .title {
+  font-size: 80px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  margin-left: 0;
+}
+
+.home .subtitle {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  max-width: 400px;
+}
+.homeText div {
+  margin-bottom: 20px;
+}
+.loanButton {
+  padding: 25px;
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  border: none;
+  font-size: 24px;
+}
+.loanButton:hover{
+  transition: all 0.1s ease-in-out;
+  scale: 1.02;
+  background-color: #1b1b1b;
+}
+.lowersec {
+  display: flex;
+  max-height: 70px;
+}
+.lowersec .info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.lowersec hr {
+  margin: 0 15px;
+}
+.info .num {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 44px;
+}
+
+.info .text {
+  font-family: "Inter", sans-serif;
+  width: 99px;
+  margin-left: 10px;
+  color: #969696;
+}
+.HomeImg {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.HomeImg img {
+  width: 100%;
+  height: 90vh;
+}
+
+/* Feature */
+
+.featurebox {
+  display: flex;
+  background-color: #212121;
+  padding: 40px;
+}
+.vl {
+  border-left: 2px solid #646464;
+  height: 120px;
+  position: relative;
+  margin: 20px;
+  display: flex;
+  top: 40px;
+}
+.feature {
+  margin-left: 20px;
+  color: white;
+}
+
+.feature img {
+  width: 62px;
+  margin-bottom: 15px;
+}
+
+.feature .title {
+  font-size: 19px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  margin-bottom: 20px;
+}
+
+.feature .subtitle {
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+  color: #7e7e7e;
+}
+
+/* OFFER */
+
+.offer {
+  margin-top: 70px;
+  background: linear-gradient(
+      to bottom,
+      #da3941 0%,
+      #da3941 65%,
+      white 65%,
+      white 100%
+    ),
+    url("./assets/offerBack.png");
+  /* Adjust the position as needed */
+  background-position: top right; /* Adjust the position as needed */
+  background-repeat: repeat;
+  background-size: cover;
+}
+.offermain {
+  padding: 80px 90px 60px;
+}
+.offermain .title {
+  font-size: 60px;
+  color: white;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+.titlediv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.offermain hr {
+  width: 40px;
+  margin-right: 15px;
+}
+
+.offermain .subtitle {
+  font-family: "Work Sans", sans-serif;
+  margin-top: 10px;
+  font-size: 20px;
+  margin-left: 40px;
+  font-weight: 200;
+  color: white;
+  max-width: 60%;
+}
+.offermain .subtitle p {
+  margin-top: 10px;
+}
+.offercards {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.offercards .card {
+position: relative;
+  height: 500px;
+  width: 400px;
+  padding: 0px 0px 40px 40px;
+  background-color: #fdfdff;
+  margin-right: 30px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: all 0.2s ease-in-out;
+}
+
+.offercards .card:hover{
+  transform: translateY(-10px);
+  transition: all 0.3s ease-in-out;
+}
+.offercards .img {
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+.offercards .title {
+  font-size: 24px;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.offercards .subtitle {
+  font-size: 15px;
+  font-family: "Work Sans", sans-serif;
+  color: #787878;
+  margin-bottom: 30px;
+  max-width: 80%;
+  min-height: 150px;
+  font-weight: 400;
+}
+
+.offercards .card .circle {
+  position: absolute; 
+  top: 0px; 
+  right: 0px;
+}
+.buttonoffer {
+  float: right;
+  margin-right: 40px;
+}
+.buttonoffer button {
+  background-color: white;
+  color: #da3941;
+  border: none;
+  font-weight: 700;
+}
+
+.buttonoffer button:hover{
+  transition: all 0.2s ease-in-out;
+  scale: 1.05;
+}
+/* MSME */
+
+.msme {
+  background-image: url("./assets/group.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 600px;
+  position: relative;
+  margin-bottom: 10%;
+}
+
+.msme .card {
+  height: 390px;
+  width: 370px;
+  padding: 50px;
+  background-color: #f8f8f9;
+  margin-right: 30px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+ position:absolute;
+ right: 0px;
+ bottom: -30%;
+  margin-top: 200px;
+  margin-right: 100px;
+}
+
+.msme .title {
+  font-size: 20px;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.msme .subtitle {
+  font-size: 18px;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 200;
+  margin-bottom: 20px;
+  font-weight: 400;
+  color: #898989;
+}
+
+.msme button {
+  margin-top: 20px;
+  text-decoration: underline;
+  background-color: white;
+  color: #da3941;
+  border: none;
+  font-weight: 800;
+}
+
+.msme button:hover{
+  transition: all 0.2s ease-in-out;
+  scale: 1.05;
+}
+/* Work */
+
+.Work {
+  padding: 150px 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Work .title {
+  color: #2a6877fb;
+  font-size: 40px;
+  font-family: "Raleway", sans-serif;
+}
+
+.Work .subtitle {
+  color: #424545;
+  font-size: 18px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+}
+.Work .mainbox {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+}
+
+.mainbox .photo img {
+  width: 400px;
+  height: 350px;
+  margin: 10px 50px;
+}
+.mainbox .content {
+  display: flex;
+  flex-direction: column;
+}
+.mainbox .content .header {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.header .num {
+  font-family: "Raleway", sans-serif;
+  font-size: 70px;
+  color: #00000021;
+  position: absolute;
+}
+
+.header .title {
+  margin-top: 20px;
+  color: #2a6877d5;
+  font-family: "Raleway", sans-serif;
+  font-size: 33px;
+  margin-left: 50px;
+}
+
+.mainbox .subtitle {
+  margin-top: 20px;
+  color: #424545;
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+  margin-left: 50px;
+}
+
+.infographics {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 100px;
+  justify-content: space-between;
+}
+.infoContent {
+  width: 40%;
+}
+.infoContent .title {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 30px;
+  color: #2e2e2e;
+  margin-bottom: 15px;
+}
+
+.infoContent .subtitle1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 17px;
+  color: #4f4f4f;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.infoContent .subtitle2 {
+  font-family: "Inter", sans-serif;
+  font-weight: 15px;
+  color: #7e7e7e;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.infographics img{
+  transition: all 0.3s ease-in-out;
+}
+.infographics img:hover{
+  transform:translateX(0.4rem) translateY(-1rem);
+  transition: all 0.3s ease-in-out;
+}
+/* Testimonial */
+.Testimonial {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+.Testimonial .content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  line-height: 0.7;
+}
+.Testimonial .content .title {
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+}
+.Testimonial .content .subtitle {
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+  color: #626262;
+}
+
+.infographics .collon {
+ width: 50%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+
+}
+.collon img{
+  width: 200px;
+  height: 150px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color:#da3941 ;
+  align-items: center;
+  justify-content: center;
+  padding: 70px;
+}
+.footerdetails {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.footer .title{
+  color: white;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 30px;
+  margin-bottom: 40px;
+ font-weight: 600;
+
+}
+
+.footerdetails .title{
+  color: white;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 43px;
+  font-weight: 600;
+}
+
+.footerdetails .subtitle{
+  color: white;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.footerdetails .card{
+  width:400px
+}
+
+.contact{
+  background-color: #F3F3F3;
+  margin-top: 50px;
+  padding: 50px;
+}
+.contact .box1{
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact .box1 .title{
+  color: #2E2E2E;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight:600 ;
+  max-width: 50%;
+  font-size: 31px;
+  margin-bottom: 30px;
+}
+.contact .box1 .address{
+  display: flex;
+  flex-direction: column;
+}
+
+.contact .box1 .address div{
+  display: flex;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  margin-top: 20px;
+}
+
+.contact .box1 .address div img{
+  display: flex;
+  align-items: center;
+width:20px;
+}
+
+.contact .box1 .address div a{
+color: #7E7E7E;
+text-decoration: none;
+margin-left: 20px;
+width: 300px;
+
+}
+
+.contact .box2{
+  margin-top: 30px;
+}
+.contact .box2 ul{
+list-style: none;
+display: flex;
+gap: 3rem;
+
+
+}
+.contact .box2 ul a{
+  text-decoration: none;
+  color:#343434;
+  font-family: "Inter", sans-serif;
+}
+
+.contact .line{
+  border: 1.4px solid #B4B4B4;
+}
+
+
+

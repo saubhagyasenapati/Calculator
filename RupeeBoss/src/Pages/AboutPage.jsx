@@ -1,6 +1,6 @@
 import React from "react";
 import hero from "../assets/abouthero.png";
-import logo from "../assets/aboutLogo.png";
+import logo from "../assets/AboutLogo.png";
 import Milestone from "../assets/journey.png";
 import "../styles/About.css";
 import { motion } from "framer-motion";

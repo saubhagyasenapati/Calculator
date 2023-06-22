@@ -4,9 +4,29 @@ import call from "../assets/call.png";
 import circle from "../assets/circle2.png";
 import address from "../assets/registeredaddress.png";
 import "../styles/Contact.css";
+import{motion} from "framer-motion"
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const ContactUs = () => {
+
+  const handleSubmit=(e)=>{
+    e.preventDefault();
+    toast.success('Form Submitted,We will get back to you Soon!', {
+      position: "bottom-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+      });
+  }
   return (
-    <div className="contacts">
+    <motion.div className="contacts" 
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    exit={{ opacity: 0 }}>
       <div className="box1">
         <div className="content">
           <p className="title">Contact Us</p>
@@ -71,20 +91,32 @@ const ContactUs = () => {
           Reach out to us & we will respond as soon as we can.
         </p>
         <div className="contactus">
-          <form action="">
+          <form action="" onSubmit={handleSubmit}>
             <input type="text" placeholder="Name" />
             <input type="number" name="" id="" placeholder="Number"/>
             <div className="centerbtn">
-            <button>Call me Back</button>
+            <button  type="submit">Call me Back</button>
             </div>
           </form>
         </div>
        
       </div>
-      <div>
-        MAP
+      <div  className="Map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241267.56432193847!2d72.69310211469652!3d19.116178318308265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c87d64ffffff%3A0x52070606740f342d!2sRupeeboss%20Financial%20Services%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1687428388371!5m2!1sen!2sin" width="1400" height="500"loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
-    </div>
+      <ToastContainer
+position="bottom-right"
+autoClose={5000}
+hideProgressBar={false}
+newestOnTop={false}
+closeOnClick
+rtl={false}
+pauseOnFocusLoss
+draggable
+pauseOnHover
+theme="light"
+/>
+    </motion.div>
   );
 };
 

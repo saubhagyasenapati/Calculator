@@ -1,8 +1,24 @@
 .calculator {
   margin: 0px 50px;
   background-color: #efefef;
+  margin-top: 40px;
 }
 
+.LoanCalbox{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: 30px;
+}
+.LoanCalbox img{
+  position:absolute;
+  right: 40px;
+  transition: all 0.3 ease-in-out;
+}
+.LoanCalbox img:hover{
+  scale: 1.1;
+  transition: all 0.3 ease-in-out;
+}
 .button-container {
   display: flex;
   flex-direction: row;
@@ -59,7 +75,16 @@
   color: #ff4141;
   font-size: 16px;
   margin-top: 20px;
-  margin-bottom: 100px;
+  margin-bottom: 40px;
+  transition: all 0.3s ease-in-out;
+}
+
+.loancheckbutton:hover {
+  border: 1.5px solid #ffffff;
+  border-radius: 6px;
+  background-color: #ff4141;
+  color: #ffffff;
+  transition: all 0.3s ease-in-out;
 }
 
 .loancircle {
@@ -97,4 +122,22 @@
 
 .CalculatorBox{
     margin-bottom: 70px;
+    transition: all 0.3 ease-in-out;
+    height: 90vh;
+}
+
+.Red{
+  color: #ff4141;
+  font-size: 25px;
+  transition:all 0.3s ease-in-out;
+  margin-bottom: 100px;
+  font-weight: 500
+}
+
+.Green{
+    color: #42c207;
+    font-size: 25px;
+    margin-bottom: 100px;
+    transition:all 0.3s ease-in-out;
+    font-weight: 500;
 }

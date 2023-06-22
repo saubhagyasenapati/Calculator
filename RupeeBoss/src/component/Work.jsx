@@ -3,40 +3,50 @@ import loan from "../assets/loan.png";
 import credit from "../assets/credit.png";
 import doc from "../assets/documentation.png";
 import Application from "../assets/Application.png";
+import Approval from "../assets/Aproval.png";
 import WorkCompoent from "../subcomponent/WorkCompoent";
 import colon from "../assets/collon.png"
+import Quotes from "../assets/Quotes.png"
 const Work = () => {
   const work = [
     {
       num: "01",
       alignLeft: true,
-      title: "Application",
+      title: "Online Application or Quick Inquiry",
       description:
-        "The borrower submits a loan application to the bank, either in person, online, or through other channels. The application includes personal and financial information, such as income, employment history, credit score, and the purpose of the loan.",
+        "Streamline your loan application process with our user-friendly online application platform or reach out to us directly for a quick inquiry. Our dedicated team promptly assists you, guiding you through the loan options and requirements.",
       imageUrl: Application,
     },
     {
       alignLeft: false,
       num: "02",
-      title: "Documentation and Verification",
+      title: "Multiple Quotes from Various Banks and NBFCs",
       description:
-        "The bank requests supporting documents from the borrower, such as identification proof, income statements, bank statements, and collateral details (if applicable). The bank verifies the information provided to assess the borrower's creditworthiness and eligibility for the loan.",
-      imageUrl: doc,
+        "We leverage our extensive network of banks and non-banking financial companies (NBFCs) to provide you with multiple loan quotes. Compare and choose the best loan offer that suits your business needs and preferences.",
+      imageUrl:Quotes ,
     },
     {
       alignLeft: true,
       num: "03",
-      title: "Credit Assessment",
+      title: "Documentation and Verification",
       description:
-        "The bank conducts a credit assessment to evaluate the borrower's creditworthiness and ability to repay the loan. This process involves analyzing the borrower's credit history, income stability, debt-to-income ratio, and other factors.",
-      imageUrl: credit,
+        "We understand the value of your time, which is why we simplify the documentation process. Our efficient team assists you in gathering the required documents swiftly, ensuring a smooth loan application experience.",
+      imageUrl: doc,
     },
     {
       alignLeft: false,
       num: "04",
-      title: "Loan Approval",
+      title: "Sanction Approved/Rejected",
       description:
-        "If the borrower meets the bank's lending criteria and passes the credit assessment, the loan is approved. The bank determines the loan amount, interest rate, repayment term, and any associated fees.",
+        "Once you have submitted the necessary documents, our expert team reviews your application promptly. We strive to provide quick sanction approvals, keeping you informed throughout the process. In case of rejection, we provide transparent feedback and explore alternative options.",
+      imageUrl: Approval,
+    },
+    {
+      alignLeft: true,
+      num: "05",
+      title: "Loan Disbursed",
+      description:
+        "Upon successful sanction approval, we initiate the loan disbursal process promptly. Our streamlined procedures ensure that the loan amount is disbursed to your business account efficiently, enabling you to address your financial needs without delay. Experience the convenience and efficiency of our loan processes with Rupee Boss, and let us assist you in securing the funds you need to fuel your business growth.",
       imageUrl: loan,
     },
   ];
@@ -44,7 +54,7 @@ const Work = () => {
   return (
     <div className="Work">
       <div className="title">
-        <p>How we Work?</p>
+        <p>How we help you get quick loans</p>
       </div>
       <div className="subtitle">
         <p>This is a process, how you can get loan for your self.</p>

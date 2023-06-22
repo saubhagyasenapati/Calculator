@@ -2,7 +2,7 @@ import React from "react";
 import hero from "../assets/hero.png";
 import { Link } from "react-router-dom";
 
-const Home = () => {
+const Home = ({calculator,setCalculator}) => {
   return (
     <div className="home">
       <div className="homeText">
@@ -19,9 +19,9 @@ const Home = () => {
             </p>
           </div>
           <div>
-            <Link to="/calculator">
-              <button className="loanButton">Loan Calculator</button>
-            </Link>
+           
+              <button className="loanButton" onClick={()=>setCalculator(true)}>Loan Calculator</button>
+           
           </div>
         </div>
         <div className="lowersec">

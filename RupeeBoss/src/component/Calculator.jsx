@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import PersonalLoan from '../subcomponent/PersonalLoan';
 import BussinessLoan from '../subcomponent/BussinessLoan';
 import HomeLoan from '../subcomponent/HomeLoan';
-
-const Calculator = () => {
+import close from '../assets/close.svg'
+const Calculator = ({calculator,setCalculator}) => {
   const [activeComponent, setActiveComponent] = useState('component1');
   const [isClicked,setisClicked]=useState(1)
   const handleButtonClick = (componentName,number) => {
@@ -13,7 +13,12 @@ const Calculator = () => {
 
   return (
     <div className='CalculatorBox'>
-          <p className='titleCal'>Loan Calculator</p>
+      <div className='LoanCalbox'>
+    
+      <p className='titleCal'>Loan Calculator</p>
+      <img src={close} alt="" onClick={()=>setCalculator(false)}/>
+      </div>
+         
           <div className="calculator">
       <div className="button-container">
         <div  className={isClicked==1 ? 'button-clicked' : 'button-notclicked'} onClick={() => handleButtonClick('component1',1)}>

@@ -11,11 +11,11 @@ const Footer2 = () => {
         <div className="address">
           <div >
             <img src="../src/assets/mail.png" alt="" />
-            <a href="mailto:Support@fintech.co">Support@fintech.co</a>
+            <a href="mailto:Support@fintech.co">wecare@rupeeboss.com</a>
           </div>
           <div>
             <img src="../src/assets/location.png" alt="" />
-            <a href="http://">8502 presston Rd.inglewood maine 98380 usa</a>
+            <a href="http://"> 619/620, The Summit Business Park , Western Express Highway Metro station, Opp. MAX Cinema, Andheri East, Mumbai, Maharashtra 400093.</a>
           </div>
         </div>
       </div>

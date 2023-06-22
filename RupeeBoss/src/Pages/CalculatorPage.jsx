@@ -6,17 +6,21 @@ import Offers from "../component/Offers";
 import Msme from "../component/Msme";
 import Work from "../component/Work";
 import Footer from "../component/Footer";
-
+import { motion } from "framer-motion";
 const CalculatorPage = () => {
   return (
-    <div>  
+    <motion.div
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    exit={{ opacity: 0 }}
+    >  
      <Calculator/>
      <Features />
       <Offers />
       <Msme />
       <Work />
       <Footer />
-    </div>
+    </motion.div>
   )
 }
 

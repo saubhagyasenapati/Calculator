@@ -4,6 +4,7 @@ import logo from "../assets/AboutLogo.png";
 import Milestone from "../assets/journey.png";
 import "../styles/About.css";
 import { motion } from "framer-motion";
+import { Fade, Slide, Zoom } from "react-awesome-reveal";
 const AboutPage = () => {
   return (
     <motion.div
@@ -12,6 +13,7 @@ const AboutPage = () => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
     >
+      <Fade delay={300}>
       <div className="about">
         <div>
           <img src={logo} alt="" />
@@ -21,11 +23,16 @@ const AboutPage = () => {
           <p>You are not alone!</p>
         </div>
       </div>
+      </Fade>
+ 
       <div className="contentWho">
+        <Slide direction="left">
         <div className="title">
           <p>Who We Are</p>
         </div>
-        <div className="subtitle">
+        </Slide>
+      <Slide direction="right">
+      <div className="subtitle">
           <p>
             <span className="company">RupeeBoss.com</span> aspires to be India’s
             preferred destination for the widest range of financial products
@@ -42,16 +49,27 @@ const AboutPage = () => {
             satisfaction with our selfless attitude and humble approach.
           </p>
         </div>
+      </Slide>
+   
       </div>
+      
       <div className="Milestone">
+        <Slide  direction="right">
         <div className="title">
           <p>Milestones</p>
         </div>
+        </Slide>
+       
+        <Slide direction="left">
         <div className="journey">
           <img src={Milestone} alt="" />
         </div>
-        <div></div>
+        </Slide>
       </div>
+      
+      
+   
+ 
     </motion.div>
   );
 };

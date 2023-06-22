@@ -1,12 +1,14 @@
 import React from "react";
 import loan from "../assets/loan.png";
-import credit from "../assets/credit.png";
+import testemonial from "../assets/testimonial.png"
 import doc from "../assets/documentation.png";
 import Application from "../assets/Application.png";
 import Approval from "../assets/Aproval.png";
 import WorkCompoent from "../subcomponent/WorkCompoent";
 import colon from "../assets/collon.png"
 import Quotes from "../assets/Quotes.png"
+import graph from "../assets/loangraph.png"
+
 const Work = () => {
   const work = [
     {
@@ -66,7 +68,7 @@ const Work = () => {
       </div>
       <div className="infographics">
         <div>
-          <img src="../src/assets/loangraph.png" alt="" />
+          <img src={graph} alt="" className="graph"/>
         </div>
         <div className="infoContent">
           <div>
@@ -88,15 +90,16 @@ const Work = () => {
         </div>
       </div>
       <div className="infographics">
-        <div className="infoContent">
-          <div>
+        <div>
+        <div>
             <p className="title">What do they think?</p>
           </div>
+          <div id="carouselExampleRide" className="carousel slide carousel-dark" data-bs-ride="true">
+  <div className="carousel-inner">
+    <div className="carousel-item active">
+    <div className="infoContent2">
           <div>
             <p className="subtitle2">
-              Lorem ipsum dolor sit amet consectetur. Aliquet ut ante ut eu. Id
-              viverra libero est nLorem ipsum dolor sit amet consectetur.
-              Aliquet ut ante ut eu. Id viverra libero est n
             </p>
           </div>
           <div>
@@ -107,7 +110,7 @@ const Work = () => {
           </div>
           <div className="Testimonial">
             <div>
-              <img src="../src/assets/testimonial.png" alt="" />
+              <img src={testemonial} alt="" />
             </div>
             <div className="content">
               <div className="title">
@@ -119,6 +122,74 @@ const Work = () => {
             </div>
           </div>
         </div>
+    </div>
+    <div class="carousel-item">
+    <div className="infoContent2">
+          <div>
+            <p className="subtitle2">
+            </p>
+          </div>
+          <div>
+            <p className="subtitle2">
+              “simply the best.better than all the rest.recommend this product
+              to beginner and advanced user”
+            </p>
+          </div>
+          <div className="Testimonial">
+            <div>
+              <img src={testemonial} alt="" />
+            </div>
+            <div className="content">
+              <div className="title">
+                <p>Theresa Webb</p>
+              </div>
+              <div className="subtitle">
+                <p>Director of technology .creativegig</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div className="carousel-item">
+    <div className="infoContent2">
+          <div>
+            <p className="subtitle2">
+            </p>
+          </div>
+          <div>
+            <p className="subtitle2">
+              “simply the best.better than all the rest.recommend this product
+              to beginner and advanced user”
+            </p>
+          </div>
+          <div className="Testimonial">
+            <div>
+              <img src={testemonial} alt="" />
+            </div>
+            <div className="content">
+              <div className="title">
+                <p>Theresa Webb</p>
+              </div>
+              <div className="subtitle">
+                <p>Director of technology .creativegig</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span className="visually-hidden">Previous</span>
+  </button>
+  <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+    <span className="carousel-control-next-icon" aria-hidden="true"></span>
+    <span className="visually-hidden">Next</span>
+  </button>
+        </div>
+    
+      
+</div>
         <div className="collon">
           <img src={colon} alt="" />
         </div>

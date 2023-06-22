@@ -12,6 +12,7 @@ import News7 from "../assets/News7.png";
 import News8 from "../assets/News8.png";
 import "../styles/Media.css";
 import { motion } from "framer-motion";
+import { Fade, Slide, Zoom } from "react-awesome-reveal";
 const MediaPage = () => {
   const news = [
     {
@@ -83,6 +84,7 @@ const MediaPage = () => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
     >
+      <Fade delay={200}>
       <div className="heading">
         <div className="partleft">
           <p className="title">
@@ -103,7 +105,9 @@ const MediaPage = () => {
           <img src={Headline} alt="" />
         </div>
       </div>
-      <div>
+      </Fade>
+<Slide direction="right">
+<div>
         <p className="Newshead">Latest News</p>
         <div className="NewsGrid">
           {news.map((item) => {
@@ -111,6 +115,8 @@ const MediaPage = () => {
           })}
         </div>
       </div>
+</Slide>
+ 
     </motion.div>
   );
 };

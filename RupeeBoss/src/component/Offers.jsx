@@ -6,6 +6,7 @@ import circle from "../assets/circle.png";
 import arrow from "../assets/arrow.png";
 import Secured from "../assets/Secured.png";
 import Unsecured from "../assets/Unsecured.png";
+
 const Offers = () => {
   const offer = [
     {
@@ -50,9 +51,7 @@ const Offers = () => {
                 <p className="title">{offer[1].title}</p>
                 <p className="subtitle">{offer[1].description}</p>
               </div>
-              <div className="buttonoffer">
-                <a href="https://www.rupeeboss.com/business-loan" target="_blank" rel="noopener noreferrer">Check <img src={arrow} alt="" /></a>  
-              </div>
+            
               <div class="dropdown">
               <div className="buttonoffer">
                 <a >Check <img src={arrow} alt="" /></a>  

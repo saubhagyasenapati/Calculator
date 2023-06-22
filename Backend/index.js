@@ -7,8 +7,9 @@ const cookieParser = require("cookie-parser");
 const bodyParser = require("body-parser");
 dotenv.config({ path: "config/config.env" });
 const path=require("path")
-
+const Sib = require('sib-api-v3-sdk')
 const calculator=require("./routes/calculatorRoute")
+const mailRoute=require("./routes/mailRoute")
 //Handling Uncaught exception
 process.on("uncaughtException", (err) => {
   console.log(`Error:${err.message}`);
@@ -21,10 +22,11 @@ app.use(cors({
 }));
 app.use(bodyParser.urlencoded({extended:true}))
 app.use(express.json());
-// app.use(cookieParser());
-//Route Imports
-app.use("/api/v1/calculator",calculator);
 
+// app.use(cookieParser());
+//Route Import
+app.use("/api/v1/calculator",calculator);
+app.use("/api/v1/mail",mailRoute);
 
 
 // app.use(express.static(path.join(__dirname,"../frontendn/build")))

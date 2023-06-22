@@ -43,9 +43,12 @@ const HomePage = () => {
         <Work />
       </Slide>
       <Fade delay={300}>
+      <Partner/>
+      </Fade>
+      <Fade delay={300}>
         <Footer />
       </Fade>
-      <Partner/>
+    
     </motion.div>
   );
 };

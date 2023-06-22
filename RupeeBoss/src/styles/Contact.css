@@ -39,8 +39,8 @@
 
 .contactcard .card {
   position: relative;
-  height: 400px;
-  width: 400px;
+  height: 350px;
+  width: 350px;
   background-color: #fdfdff;
   margin-right: 30px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -70,19 +70,15 @@
 .contactcard .card .subtitle {
   font-size: 15px;
   font-family: "DM Sans", sans-serif;
-
-  margin-bottom: 30px;
+  min-height: 100px;
   max-width: 80%;
 }
 .contactcard .card .subtitle a {
   color: #1b424c;
   text-decoration: none;
+  margin-bottom: 30px;
 }
-.contactcard .card .circle {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-}
+
 
 /* Box2 */
 

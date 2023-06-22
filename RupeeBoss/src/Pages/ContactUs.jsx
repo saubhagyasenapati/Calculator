@@ -10,6 +10,7 @@ import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
 import { Fade, Slide, Zoom,Flip } from "react-awesome-reveal";
 const ContactUs = () => {
+  const API = import.meta.env.VITE_API_URL;
   const [name, setName] = useState('');
 const [number, setNumber] = useState('');
 
@@ -20,7 +21,7 @@ const [number, setNumber] = useState('');
       "number": number,
     };
    
-    axios.post(' http://localhost:3000/api/v1/mail/contact',formData)
+    axios.post(`${API}/api/v1/mail/contact`,formData)
     .then(response => {
     if(response.data.success){
       toast.success("Submitted Successfully,We will get back to you Soon!", {

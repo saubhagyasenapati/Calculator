@@ -32,24 +32,23 @@ const Offers = () => {
       <div className="offercards">
             <div className="card">
               <div className="img">
-                <img src={offer[0].imageUrl} alt="" />
-              </div>
-              <div className="content">
-                <p className="title">{offer[0].title}</p>
-                <p className="subtitle">{offer[0].description}</p>
-              </div>
-              <div className="buttonoffer">
-                <a href="https://www.rupeeboss.com/business-loan" target="_blank" rel="noopener noreferrer">Check <img src={arrow} alt="" /></a>  
-              </div>
-                
-            </div>
-            <div className="card">
-              <div className="img">
                 <img src={offer[1].imageUrl} alt="" />
               </div>
               <div className="content">
                 <p className="title">{offer[1].title}</p>
                 <p className="subtitle">{offer[1].description}</p>
+              </div>
+              <div className="buttonoffer">
+                <a href="https://www.rupeeboss.com/business-loan" target="_blank" rel="noopener noreferrer">Check <img src={arrow} alt="" /></a>  
+              </div>  
+            </div>
+            <div className="card">
+              <div className="img">
+                <img src={offer[0].imageUrl} alt="" />
+              </div>
+              <div className="content">
+                <p className="title">{offer[0].title}</p>
+                <p className="subtitle">{offer[0].description}</p>
               </div>
             
               <div class="dropdown">

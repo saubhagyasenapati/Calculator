@@ -27,10 +27,9 @@ const Home = ({calculator,setCalculator}) => {
         <div className="lowersec">
           <div className="info">
             <p className="num">2943</p>
-
             <p className="text">Disbursals Done</p>
           </div>
-          <hr />
+          <div className="hrr"></div>
           <div className="info">
             <p className="num">$1M+</p>
 

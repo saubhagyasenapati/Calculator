@@ -106,16 +106,20 @@ const MediaPage = () => {
         </div>
       </div>
       </Fade>
-<Slide direction="right">
 <div>
-        <p className="Newshead">Latest News</p>
+  <Slide direction="left" delay={300}>
+  <p className="Newshead">Latest News</p>
+  </Slide>
+        <Slide direction="right" delay={400}>
         <div className="NewsGrid">
           {news.map((item) => {
             return <News item={item} />;
           })}
         </div>
+        </Slide>
+      
       </div>
-</Slide>
+
  
     </motion.div>
   );

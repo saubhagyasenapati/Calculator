@@ -1,13 +1,14 @@
 import React from "react";
 import loan from "../assets/loan.png";
-import testemonial from "../assets/testimonial.png"
+import testemonial from "../assets/testimonial.png";
 import doc from "../assets/documentation.png";
 import Application from "../assets/Application.png";
 import Approval from "../assets/Aproval.png";
 import WorkCompoent from "../subcomponent/WorkCompoent";
-import colon from "../assets/collon.png"
-import Quotes from "../assets/Quotes.png"
-import graph from "../assets/loangraph.png"
+import colon from "../assets/collon.png";
+import Quotes from "../assets/Quotes.png";
+import graph from "../assets/loangraph.png";
+import TestemonialComponent from "../subcomponent/TestemonialComponent";
 
 const Work = () => {
   const work = [
@@ -25,7 +26,7 @@ const Work = () => {
       title: "Multiple Quotes from Various Banks and NBFCs",
       description:
         "We leverage our extensive network of banks and non-banking financial companies (NBFCs) to provide you with multiple loan quotes. Compare and choose the best loan offer that suits your business needs and preferences.",
-      imageUrl:Quotes ,
+      imageUrl: Quotes,
     },
     {
       alignLeft: true,
@@ -66,134 +67,42 @@ const Work = () => {
           return <WorkCompoent item={item} />;
         })}
       </div>
-      <div className="infographics">
-        <div>
-          <img src={graph} alt="" className="graph"/>
-        </div>
-        <div className="infoContent">
-          <div>
-            <p className="title">What do you get?</p>
+        <div className="infographics">
+          <div className="graph">
+            <img src={graph} alt="graph" />
           </div>
-          <div>
-            <p className="subtitle1">
-              Instant payment.electronic payments are much faster than the
-              traditional methods of payments.
-            </p>
-          </div>
-          <div>
-            <p className="subtitle2">
-              Lorem ipsum dolor sit amet consectetur. Aliquet ut ante ut eu. Id
-              viverra libero est nLorem ipsum dolor sit amet consectetur.
-              Aliquet ut ante ut eu. Id viverra libero est n
-            </p>
-          </div>
-        </div>
-      </div>
-      <div className="infographics">
-        <div>
-        <div>
-            <p className="title">What do they think?</p>
-          </div>
-          <div id="carouselExampleRide" className="carousel slide carousel-dark" data-bs-ride="true">
-  <div className="carousel-inner">
-    <div className="carousel-item active">
-    <div className="infoContent2">
-          <div>
-            <p className="subtitle2">
-            </p>
-          </div>
-          <div>
-            <p className="subtitle2">
-              “simply the best.better than all the rest.recommend this product
-              to beginner and advanced user”
-            </p>
-          </div>
-          <div className="Testimonial">
-            <div>
-              <img src={testemonial} alt="" />
-            </div>
-            <div className="content">
+          <div className="infocontent">
+            <div >
               <div className="title">
-                <p>Theresa Webb</p>
+                <p>What do you get?</p>
               </div>
-              <div className="subtitle">
-                <p>Director of technology .creativegig</p>
+              <div className="subtitle1">
+                <p>Instant payment.electronic payments are much faster than the traditional methods of payments.</p>
+              </div>
+              <div className="subtitle2">
+                <p>Lorem ipsum dolor sit amet consectetur. Aliquet ut ante ut eu. Id viverra libero est nLorem ipsum dolor sit amet consectetur. Aliquet ut ante ut eu. Id viverra libero est n</p>
               </div>
             </div>
           </div>
         </div>
+<div className="TestimonialDiv">
+  <div className="testemonialcontent">
+    <div className="title">
+      <p>What do they think?</p>
     </div>
-    <div class="carousel-item">
-    <div className="infoContent2">
-          <div>
-            <p className="subtitle2">
-            </p>
-          </div>
-          <div>
-            <p className="subtitle2">
-              “simply the best.better than all the rest.recommend this product
-              to beginner and advanced user”
-            </p>
-          </div>
-          <div className="Testimonial">
-            <div>
-              <img src={testemonial} alt="" />
-            </div>
-            <div className="content">
-              <div className="title">
-                <p>Theresa Webb</p>
-              </div>
-              <div className="subtitle">
-                <p>Director of technology .creativegig</p>
-              </div>
-            </div>
-          </div>
-        </div>
+    <div className="subtitle2">
+      <p >
+      Lorem ipsum dolor sit amet consectetur. Aliquet ut ante ut eu. Id viverra libero est nLorem ipsum dolor sit amet consectetur. Aliquet ut ante ut eu. Id viverra libero est n
+      </p>
     </div>
-    <div className="carousel-item">
-    <div className="infoContent2">
-          <div>
-            <p className="subtitle2">
-            </p>
-          </div>
-          <div>
-            <p className="subtitle2">
-              “simply the best.better than all the rest.recommend this product
-              to beginner and advanced user”
-            </p>
-          </div>
-          <div className="Testimonial">
-            <div>
-              <img src={testemonial} alt="" />
-            </div>
-            <div className="content">
-              <div className="title">
-                <p>Theresa Webb</p>
-              </div>
-              <div className="subtitle">
-                <p>Director of technology .creativegig</p>
-              </div>
-            </div>
-          </div>
-        </div>
+    <div className="testemonial">
+<TestemonialComponent/>
     </div>
   </div>
-  <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
-    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span className="visually-hidden">Previous</span>
-  </button>
-  <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
-    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-    <span className="visually-hidden">Next</span>
-  </button>
-        </div>
-    
-      
+  <div className="collon">
+    <img src={colon} alt="collon" />
+  </div>
 </div>
-        <div className="collon">
-          <img src={colon} alt="" />
-        </div>
-      </div>
     </div>
   );
 };

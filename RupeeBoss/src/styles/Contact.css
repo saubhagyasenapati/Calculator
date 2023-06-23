@@ -150,3 +150,81 @@ scale: 1.03;
 .Map{
   padding: 50px;
 }
+
+.Map iframe{
+     
+    display: block;  /* iframes are inline by default */   
+    height: 40vh;  /* Set height to 100% of the viewport height */   
+    width: 95vw;  /* Set width to 100% of the viewport width */     
+    border: none; /* Remove default border */
+    background: lightyellow; /* Just for styling */
+
+}
+
+@media (max-width: 1024px) {
+.contacts .box2 {
+  width: 100%;
+  padding: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../assets/contactback.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+  .contactcard .card {
+    position: relative;
+    height: 350px;
+    width: 300px;
+    margin-right: 20px;
+ 
+  }
+  .contactus form {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+  }
+  .contactus input::placeholder {
+    padding-top: 5px;
+  }
+  .contacts .box2 .contactus input {
+    margin: 15px 10px;
+    width: 350px;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 18px;
+    color: white;
+    font-family: "DM Sans", sans-serif;
+  }
+}
+
+@media (max-width: 800px) {
+  .contacts .content .title {
+    font-size: 36px;
+    margin-top: 20px;
+  }
+  .contacts .box1 .content .subtitle {
+   font-size: 16px;
+  }
+  .contactcard .card .title {
+   margin-bottom: 20px;
+  }
+  .contactcard .card .subtitle{
+    font-size: 14px;
+  }
+  .contacts .box1 .content{
+  margin-bottom: 20px;
+}
+  .contactcard {
+    flex-direction: column;
+  }
+  .contactcard .card{
+margin-bottom: 20px;
+  }
+  .contactcard .card{
+    height: 310px;
+    width: 250px;
+  }
+}

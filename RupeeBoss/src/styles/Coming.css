@@ -1,0 +1,14 @@
+.coming{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+height: 90vh;
+}
+
+.coming p{
+    font-family: 'Work Sans', sans-serif;
+    color: #263238;
+    font-weight: 600;
+    font-size:60px ;
+}

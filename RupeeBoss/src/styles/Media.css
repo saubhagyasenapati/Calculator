@@ -41,7 +41,7 @@ grid-template-columns: repeat(3, 1fr);
 .Media .heading .subtitle .bold{
   font-weight: 600;
 }
-.newsbutton{
+.newsbutton {
 color: #DA3941;
 font-size:20px ;
 border: none;
@@ -50,6 +50,11 @@ font-family: 'Work Sans', sans-serif;
 font-weight: 600;
 text-decoration: underline;
 margin-bottom: 100px;
+}
+.newsbutton a{
+  border: none;
+  text-decoration: none;
+  color: #DA3941;
 }
 
 .Newshead{
@@ -75,6 +80,7 @@ margin-bottom: 30px;
 .News .content{
     padding: 25px;
     max-height: 450px;
+   
 }
 
 .News .content .title{
@@ -94,3 +100,81 @@ margin-bottom: 30px;
     color: #DA3941;
 
     }
+    @media (max-width: 1024px) {
+      .Media{
+        padding: 40px;
+      }
+   
+      .Media .heading .partright img{
+       width: 100%;
+       height: 100%;
+      }
+      .Media .heading .title{
+       font-size:35px ;
+      }
+      .NewsGrid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        }
+      .News{
+        margin: 10px;
+        background-color: #FDFDFF;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        max-height:500px ;
+    }
+      }
+
+      @media (max-width: 1024px) {
+        .Media{
+          padding: 20px;
+        }
+        .Media .heading .partright{
+          width: 100%;
+        }
+        .Media .heading .partleft{
+          width: 100%;
+        }
+        .Media .heading .partright img{
+         width: 100%;
+         height: 100%;
+        }
+        .Media .heading .title{
+         font-size:21px ;
+         margin-bottom: 15px;
+        }
+        .Media .heading .subtitle{
+          font-size:16px ;
+         }
+        .Media .heading{
+          flex-direction: column-reverse;
+        }
+        .NewsGrid{
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+          }
+        .News{
+          margin: 10px;
+          background-color: #FDFDFF;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          max-height:420px ;
+      }
+      .News .content .desc{
+        font-size: 14px;
+        margin-bottom: 10px;
+      }
+      .newsbutton{
+        font-size: 14px;
+        margin-bottom: 30px;
+      }
+      .Newshead{
+        font-size: 30px;
+        margin-bottom: 15px;
+      }
+      .News .content .title{
+        font-size: 15px;
+        margin-bottom: 10px;
+      }
+      .News .content{
+        padding: 15px 20px;
+      }
+        }

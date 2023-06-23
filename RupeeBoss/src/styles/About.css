@@ -66,3 +66,22 @@ margin-bottom: 20px;
     font-family: 'Raleway', sans-serif;
     margin-bottom: 70px;
 }
+
+@media (max-width: 1024px) {
+
+    .Milestone{
+        padding: 10px 10px;
+    }
+    .Milestone .journey img{
+        width: 90vw;
+    }
+    .aboutPage .contentWho .title{
+        font-size: 50px;
+    }
+    .aboutPage .contentWho .subtitle{
+        font-size: 18px;
+    }
+    .contentWho{
+        padding: 50px;
+    }
+}

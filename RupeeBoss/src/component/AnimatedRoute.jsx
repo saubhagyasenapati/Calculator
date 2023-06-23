@@ -6,6 +6,7 @@ import CalculatorPage from '../Pages/CalculatorPage';
 import ContactUs from '../Pages/ContactUs';
 import MediaPage from '../Pages/MediaPage';
 import HomePage from '../Pages/HomePage';
+import Comingsoon from '../Pages/Comingsoon';
 function AnimatedRoute() {
     const location =useLocation();
   return (
@@ -16,6 +17,7 @@ function AnimatedRoute() {
     <Route path="/media" element={<MediaPage/>} />
     <Route path="/contact" element={<ContactUs/>} />
     <Route path="/calculator" element={<CalculatorPage/>} />
+    <Route path="/blog" element={<Comingsoon/>} />
   </Routes>
     </AnimatePresence>
  

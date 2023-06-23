@@ -28,6 +28,16 @@ $animationSpeed: 40s;
 	100% { transform: translateX(calc(-250px * 7))}
 }
 
+@media (max-width: 1024px) {
+.partner{
+	height: 40vh;
+}
+.partner .title{
+	font-size: 50px;
+}
+  }
+
+  
 
 // Styling
 .slider {
@@ -71,3 +81,20 @@ $animationSpeed: 40s;
 		width: 250px;
 	}
 }
+
+@media (max-width: 600px) {
+	.partner{
+		height: 50vh;
+	}
+	.partner .title{
+		font-size: 45px;
+	}
+	.slider {
+		width: 85%;
+	}
+		
+	.slide img{
+		height: 100px;
+		width: 200px;
+	}
+	  }

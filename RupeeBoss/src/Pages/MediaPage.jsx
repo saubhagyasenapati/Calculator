@@ -17,7 +17,7 @@ const MediaPage = () => {
   const news = [
     {
       title:
-        "World's first AI based bot developed by Rupeeboss.com with Reliance JIO",
+        "WORLD'S FIRST AI BASED BOT DEVELOPED BY RUPEEBOSS.COM WITH RELIANCE JIO",
       description:
         "Now, Reliance Jio will help you resolve your loan queries The Loan Genie is a video call based bot that will help customers seek answers to all their loan-related queries through interactions and engagement. Users can also apply for the loan on this platform.",
       imageUrl: News1,
@@ -99,7 +99,7 @@ const MediaPage = () => {
             seek answers to all their loan-related queries through interactions
             and engagement. Users can also apply for the loan on this platform.
           </p>
-          <button className="newsbutton">Read More</button>
+          <button className="newsbutton"><a href="https://www.businesstoday.in/latest/corporate/story/reliance-jio-help-resolve-loan-queries-loan-genie-168643-2019-02-20" target="_blank">Read More</a></button>
         </div>
         <div className="partright">
           <img src={Headline} alt="" />

@@ -3,6 +3,8 @@ import PersonalLoan from '../subcomponent/PersonalLoan';
 import BussinessLoan from '../subcomponent/BussinessLoan';
 import HomeLoan from '../subcomponent/HomeLoan';
 import close from '../assets/close.svg'
+import WorkingCapital from '../subcomponent/WorkingCapital';
+import LoanEMI from '../subcomponent/LoanEMI';
 const Calculator = ({calculator,setCalculator}) => {
   const [activeComponent, setActiveComponent] = useState('component1');
   const [isClicked,setisClicked]=useState(1)
@@ -30,6 +32,12 @@ const Calculator = ({calculator,setCalculator}) => {
         <div className={isClicked==3 ? 'button-clicked' : 'button-notclicked'}onClick={() => handleButtonClick('component3',3)}>
         <p >Home Loan Calculator</p>
         </div>
+        <div className={isClicked==4 ? 'button-clicked' : 'button-notclicked'}onClick={() => handleButtonClick('component4',4)}>
+        <p >Working Capital Calculator</p>
+        </div>
+        <div className={isClicked==5 ? 'button-clicked' : 'button-notclicked'}onClick={() => handleButtonClick('component5',5)}>
+        <p >EMI Calculator</p>
+        </div>
        
       </div>
 <hr />
@@ -37,6 +45,8 @@ const Calculator = ({calculator,setCalculator}) => {
         {activeComponent === 'component1' && <PersonalLoan/>}
         {activeComponent === 'component2' && <BussinessLoan />}
         {activeComponent === 'component3' && <HomeLoan />}
+        {activeComponent === 'component4' && <WorkingCapital />}
+        {activeComponent === 'component5' && <LoanEMI />}
       </div>
     </div>
     </div>

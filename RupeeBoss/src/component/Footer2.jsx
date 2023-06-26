@@ -1,13 +1,64 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import mail from "../assets/mail.png"
-import location from "../assets/location.png"
+import mail from "../assets/mail.png";
+import logo from "../assets/logo.png";
+import location from "../assets/location.png";
+import facebook from "../assets/facebook.png";
+import twitter from "../assets/twitter.png";
+import insta from "../assets/insta.png";
 const Footer2 = () => {
   return (
     <div className="contact">
-      <div className="box1">
-        <div>
-          <p className="title">Make secure payment & grow your online business</p>
+      <div className="upperfooter">
+        <div className="logo">
+          <img src={logo} alt="" />
+          <p className="description">
+            Unlock your business potential with our tailored fintech solutions.
+          </p>
+        </div>
+        <div className="footerlinks">
+          <div className="links">
+          <p className="linkheader">HomePage</p>
+            <ul>
+              <li>
+                <Link to="/about">About</Link>
+              </li>
+              <li>
+                <Link to="/blog">Blog</Link>
+              </li>
+              <li>
+                <Link to="/media">Media</Link>
+              </li>
+              <li>
+                <Link to="/contact">Contact</Link>
+              </li>
+            </ul>
+          </div>
+          <div className="links">
+          <p className="linkheader">Locations</p>
+            <ul>
+              <li>
+                <p>Delhi</p>
+              </li>
+              <li>
+              <p>Ahmedabad, Indore</p>
+              </li>
+              <li>
+               <p>Mumbai, Pune</p>
+              </li>
+              <li>
+              <p>Bangalore, Chennai, Hyderabad</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div className="lowerfooter">
+        <div className="social">
+<img src={facebook} alt="" />
+<img src={twitter} alt="" />
+<img src={insta} alt="" />
         </div>
         <div className="address">
           <div >
@@ -19,16 +70,6 @@ const Footer2 = () => {
             <a href="http://"> 619/620, The Summit Business Park , Western Express Highway Metro station, Opp. MAX Cinema, Andheri East, Mumbai, Maharashtra 400093.</a>
           </div>
         </div>
-      </div>
-      <hr className="line"/>
-      <div className="box2">
-        <ul>
-        <li><Link to='/'>Home</Link></li>
-            <li><Link to='/about' >About</Link></li>
-            <li><Link to='/blog'>Blog</Link></li>
-            <li><Link to='/media'>Media</Link></li>
-            <li><Link to='/contact'>Contact</Link></li>
-        </ul>
       </div>
     </div>
   );

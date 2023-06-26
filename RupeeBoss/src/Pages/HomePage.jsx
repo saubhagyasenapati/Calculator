@@ -11,6 +11,8 @@ import { motion, useScroll } from "framer-motion";
 import { Fade, Slide, Zoom } from "react-awesome-reveal";
 import Calculator from "../component/Calculator";
 import Partner from "../component/Partner";
+import Updates from "../component/Updates";
+import Maps from "../component/Maps";
 
 const HomePage = () => {
   const [calculator, setCalculator] = useState(false)
@@ -39,15 +41,21 @@ const HomePage = () => {
       <Fade delay={200}>
         <Msme />
       </Fade>
+      <Fade delay={300}>
+   <Updates/>
+      </Fade>
       <Slide delay={300}>
         <Work />
       </Slide>
       <Fade delay={300}>
-      <Partner/>
+      <Maps/>
       </Fade>
       <Fade delay={300}>
-        <Footer />
+      <Partner/>
       </Fade>
+      {/* <Fade delay={300}>
+        <Footer />
+      </Fade> */}
     
     </motion.div>
   );

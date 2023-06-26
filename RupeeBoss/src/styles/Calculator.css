@@ -1,7 +1,6 @@
 .calculator {
-  margin: 0px 50px;
+  margin: 10px 50px;
   background-color: #efefef;
-  margin-top: 40px;
 }
 
 .LoanCalbox{
@@ -31,7 +30,7 @@
   justify-content: center;
   padding: 20px;
   font-family: "Plus Jakarta Sans", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
 }
 
@@ -40,6 +39,12 @@
   color: #ffffff;
   transition: all 0.3s ease-in-out;
 }
+.button-clicked p{
+ margin: 0rem;
+}
+.button-notclicked p{
+  margin: 0rem;
+ }
 .button-notclicked {
   color: #ff4141;
   transition: all 0.3s ease-in-out;
@@ -52,6 +57,7 @@
   font-family: "DM Sans", sans-serif;
   font-size: 18px;
   position: relative;
+  padding-bottom: 200px;
 
 }
 .personalbox {
@@ -75,7 +81,7 @@
   color: #ff4141;
   font-size: 16px;
   margin-top: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 100px;
   transition: all 0.3s ease-in-out;
 }
 
@@ -123,7 +129,7 @@
 .CalculatorBox{
     margin-bottom: 70px;
     transition: all 0.3 ease-in-out;
-    height: 90vh;
+    height: 100%;
 }
 
 .Red{
@@ -141,3 +147,153 @@
     transition:all 0.3s ease-in-out;
     font-weight: 500;
 }
+
+.workingbox{
+  display:flex ;
+}
+
+.workingform{
+display: grid;
+}
+
+/* .workingcapitalloanbox{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+} */
+
+.workingcapitalloanbox .left{
+  width:70%
+}
+
+.workingloanbox{
+  width:100%
+}
+
+
+
+.workingbox{
+  width: 100%;
+}
+.workingLeft{
+width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px; /* Adjust the gap as per your preference */
+  
+}
+
+.workingRight{
+  margin-top: 20px;
+  background-color: #ffffff;
+  width: 25%;
+  border-radius: 10px;
+}
+
+.eligible{
+  font-family: 'DM Sans', sans-serif;
+  margin-top: 20px;
+  text-align: center;
+
+}
+.workingbox{
+  display: flex;
+}
+
+.EmiBox{
+  display: flex;
+}
+
+.EmiBox .box{
+  width: 30%;
+  background-color: #ffffff;
+  margin: 20px;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.EmiBox 
+.EmiBox .box .heading{
+  text-align: center;
+
+}
+.EmiBox form{
+  width: 90%;
+}
+.EmiBox .Insertion {
+  padding: 10px;
+  width: 100%;
+
+}
+
+.emiresult{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 15px;
+  margin: 10px 10px;
+}
+
+.emiresult .title{
+font-weight: 600;
+width: 30%;
+font-size: 14px;
+}
+.emiresult .title p{
+margin: 0;
+  }
+.emiresult .boxinside{
+  border: 1px solid;
+  width: 70%;
+  display: flex;
+  align-items: start;
+  padding: 3px;
+  border-radius: 10px;
+  margin-left: 10px;
+  }
+  .emiresult .boxinside p{
+    margin: 0;
+  }
+  .emiresult .boxinside p img{
+    margin: 10px 10px;
+  }
+
+  .round1{
+    width: 8px;
+    height: 8px;
+    background-color:red;
+    border-radius: 100px;
+  }
+  .round2{
+    width: 8px;
+    height: 8px;
+    background-color:#FFCD1B;
+    border-radius: 100px;
+  }
+  .round3{
+    width: 8px;
+    height: 8px;
+    background-color:#6CDCF4;
+    border-radius: 100px;
+  }
+            
+  .resultgraph{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .resultgraph div{
+    margin: 0px 5px;
+  }
+  .resultgraph div p{
+    margin: 0px;
+  }
+
+  .upperbox{
+    height: 40%;
+    width: 100%;
+  }

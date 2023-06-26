@@ -29,14 +29,14 @@ const Home = ({calculator,setCalculator}) => {
         </div>
         <div className="lowersec">
           <div className="info">
-            <p className="num">2943</p>
-            <p className="text">Disbursals Done</p>
+            <p className="num">16000cr+</p>
+            <p className="text">Loan Disbursals Done</p>
           </div>
           <div className="hrr"></div>
           <div className="info">
-            <p className="num">$1M+</p>
+            <p className="num">18000+ MSME</p>
 
-            <p className="text">Happy Customers</p>
+            <p className="text">Retail Customers</p>
           </div>
         </div>
       </div>

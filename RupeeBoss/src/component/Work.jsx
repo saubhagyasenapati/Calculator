@@ -2,12 +2,12 @@ import React from "react";
 import loan from "../assets/loan.png";
 import testemonial from "../assets/testimonial.png";
 import doc from "../assets/documentation.png";
-import Application from "../assets/Application.png";
+import Query from "../assets/Query.png";
 import Approval from "../assets/Aproval.png";
 import WorkCompoent from "../subcomponent/WorkCompoent";
 import colon from "../assets/collon.png";
 import Quotes from "../assets/Quotes.png";
-import graph from "../assets/loangraph.png";
+import Whatget from "../assets/WhatGet.png";
 import TestemonialComponent from "../subcomponent/TestemonialComponent";
 
 const Work = () => {
@@ -15,10 +15,10 @@ const Work = () => {
     {
       num: "01",
       alignLeft: true,
-      title: "Online Application or Quick Inquiry",
+      title: "Quick Query",
       description:
         "Streamline your loan application process with our user-friendly online application platform or reach out to us directly for a quick inquiry. Our dedicated team promptly assists you, guiding you through the loan options and requirements.",
-      imageUrl: Application,
+      imageUrl: Query,
     },
     {
       alignLeft: false,
@@ -68,21 +68,18 @@ const Work = () => {
         })}
       </div>
         <div className="infographics">
-          <div className="graph">
-            <img src={graph} alt="graph" />
-          </div>
           <div className="infocontent">
             <div >
               <div className="title">
-                <p>What do you get?</p>
+                <p>What you get?</p>
               </div>
               <div className="subtitle1">
-                <p>Instant payment.electronic payments are much faster than the traditional methods of payments.</p>
-              </div>
-              <div className="subtitle2">
-                <p>Lorem ipsum dolor sit amet consectetur. Aliquet ut ante ut eu. Id viverra libero est nLorem ipsum dolor sit amet consectetur. Aliquet ut ante ut eu. Id viverra libero est n</p>
+                <p>Access a wide range of loan products from over 100 banks and non-banking financial companies (NBFCs).</p>
               </div>
             </div>
+          </div>
+          <div className="grid">
+            <img src={Whatget} alt="img"  />
           </div>
         </div>
 <div className="TestimonialDiv">

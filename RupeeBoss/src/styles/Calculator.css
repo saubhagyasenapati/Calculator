@@ -58,8 +58,11 @@
   font-size: 18px;
   position: relative;
   padding-bottom: 200px;
-
+  background-image: url("../assets/CalculatorPhoto.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
 .personalbox {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

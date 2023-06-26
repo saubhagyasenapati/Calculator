@@ -1,6 +1,6 @@
 import React from 'react'
 import Feature from '../subcomponent/Feature';
-import clock from "../assets/vector3.svg"
+import clock from "../assets/Vector3.svg"
 import tick from "../assets/vvector2.svg"
 import headphone from "../assets/vector1.svg"
 const Features = () => {

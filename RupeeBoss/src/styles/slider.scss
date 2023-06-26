@@ -28,14 +28,7 @@ $animationSpeed: 40s;
 	100% { transform: translateX(calc(-250px * 7))}
 }
 
-@media (max-width: 1024px) {
-.partner{
-	height: 40vh;
-}
-.partner .title{
-	font-size: 50px;
-}
-  }
+
 
   
 
@@ -98,3 +91,12 @@ $animationSpeed: 40s;
 		width: 200px;
 	}
 	  }
+
+	  @media (max-width: 1024px) {
+		.partner{
+			height: 70vh;
+		}
+		.partner .title{
+			font-size: 50px;
+		}
+		  }

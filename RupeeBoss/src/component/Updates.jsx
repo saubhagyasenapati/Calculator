@@ -1,37 +1,37 @@
 import React from 'react'
-import temp from '../assets/updates1.png'
+import photo from '../assets/updates1.png'
+import temp from '../assets/temporary.png'
 const Updates = () => {
     const update = [
         {
         
-          title: "MSME Bharat Manch",
+          title: "MSME Startup Expo 2023",
           date:"27-28-29 June",
           description:
-            "Stall No. 28. WTC, Cuffe Parade",
-          imageUrl:temp,
+            "Stall No. 28. WTC,Cuffe Parade,Mumbai",
+          imageUrl:photo,
         },
         {
          
           title: "MSME Bharat Manch",
-          date:"27-28-29 June",
           description:
-            "Stall No. 28. WTC, Cuffe Parade",
+            "MSME Bharat Manch",
           imageUrl: temp,
         },
         {
         
           title: "MSME Bharat Manch",
-          date:"27-28-29 June",
+        
           description:
-            "Stall No. 28. WTC, Cuffe Parade",
+            "MSME Bharat Manch",
           imageUrl: temp,
         },
         {
         
             title: "MSME Bharat Manch",
-            date:"27-28-29 June",
+           
             description:
-              "Stall No. 28. WTC, Cuffe Parade",
+              "MSME Bharat Manch",
             imageUrl: temp,
           },
     ]
@@ -50,7 +50,6 @@ const Updates = () => {
                 <p className='date'>{item.date}</p>
                 <p className='subtitle'>{item.description}</p>
                 </div>
-    
             </div>)
         })}
       </div>

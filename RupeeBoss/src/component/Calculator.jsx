@@ -7,7 +7,7 @@ import WorkingCapital from '../subcomponent/WorkingCapital';
 import LoanEMI from '../subcomponent/LoanEMI';
 const Calculator = ({calculator,setCalculator}) => {
   const [activeComponent, setActiveComponent] = useState('component1');
-  const [isClicked,setisClicked]=useState(2)
+  const [isClicked,setisClicked]=useState(1)
   const handleButtonClick = (componentName,number) => {
     setActiveComponent(componentName);
     setisClicked(number)
@@ -22,10 +22,10 @@ const Calculator = ({calculator,setCalculator}) => {
          
           <div className="calculator">
       <div className="button-container">
-      <div className={isClicked==2 ? 'button-clicked' : 'button-notclicked'} onClick={() => handleButtonClick('component2',2)}>
+      <div className={isClicked==1 ? 'button-clicked' : 'button-notclicked'} onClick={() => handleButtonClick('component1',1)}>
        <p >Business Loan Calculator</p>
        </div>
-        <div  className={isClicked==1 ? 'button-clicked' : 'button-notclicked'} onClick={() => handleButtonClick('component1',1)}>
+        <div  className={isClicked==2? 'button-clicked' : 'button-notclicked'} onClick={() => handleButtonClick('component2',2)}>
         <p >Personal Loan Calculator</p>
         </div>
         <div className={isClicked==3 ? 'button-clicked' : 'button-notclicked'}onClick={() => handleButtonClick('component3',3)}>
@@ -41,8 +41,8 @@ const Calculator = ({calculator,setCalculator}) => {
       </div>
 <hr />
       <div className="component-container">
-        {activeComponent === 'component1' && <PersonalLoan/>}
-        {activeComponent === 'component2' && <BussinessLoan />}
+        {activeComponent === 'component1' && <BussinessLoan/>}
+        {activeComponent === 'component2' && <PersonalLoan />}
         {activeComponent === 'component3' && <HomeLoan />}
         {activeComponent === 'component4' && <WorkingCapital />}
         {activeComponent === 'component5' && <LoanEMI />}

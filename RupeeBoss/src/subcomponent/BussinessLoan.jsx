@@ -18,9 +18,6 @@ const BussinessLoan = () => {
       
         "NetMonthlyIncome":NetMonthlyIncome,
       "Obligations":currentEMIPaying,
-      "loanAmount":loanAmount,
-      "Interest": Interest,
-      "loanTenure": loanTenure
     
     };
 
@@ -49,37 +46,6 @@ const BussinessLoan = () => {
                 value={NetMonthlyIncome}
                 onChange={(e) => setNetMonthlyIncome(e.target.value)}
                 placeholder="Net Monthly Income"
-              />
-            </div>
-            <div>
-              <input
-                className="Insertion"
-                type="number"
-                name="loanAmount"
-                value={loanAmount}
-                onChange={(e) => setLoanAmount(e.target.value)}
-                placeholder="Loan Amount"
-                min={100000}
-              />
-            </div>
-            <div>
-              <input
-                className="Insertion"
-                type="number"
-                name="loanTenure"
-                value={loanTenure}
-                onChange={(e) => setLoanTenure(e.target.value)}
-                placeholder="Loan Tenure"
-              />
-            </div>
-            <div>
-              <input
-                className="Insertion"
-                type="number"
-                name="Interest"
-                value={Interest}
-                onChange={(e) => setInterest(e.target.value)}
-                placeholder="Interest"
               />
             </div>
             <div>

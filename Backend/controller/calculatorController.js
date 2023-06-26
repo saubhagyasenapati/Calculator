@@ -23,17 +23,15 @@ exports.getPersonalLoanCalculator = catchAsyncErrors(async (req, res) => {
 });
 
 exports.getBussinessLoanCalculator = catchAsyncErrors(async (req, res) => {
-  const { NetMonthlyIncome, Obligations, loanAmount, Interest, loanTenure } =
+  const { NetMonthlyIncome, Obligations } =
     req.body;
 
   var AllowedLoan = 0.7 * NetMonthlyIncome;
   AllowedLoan = AllowedLoan - Obligations;
-  console.log(AllowedLoan);
-  const Rate = Interest / (12 * 100);
-  const powerFactor = Math.pow(1 + Rate, loanTenure);
-  const EMI =
-    (loanAmount * Rate * powerFactor) / (Math.pow(1 + Rate, loanTenure) - 1);
-  const TotalAmount = (loanAmount * AllowedLoan) / EMI;
+  const Rate = 18/(12 * 100);
+  const powerFactor = Math.pow(1 + Rate, 36);
+  const EMI =(100000 * Rate * powerFactor) / (Math.pow(1 + Rate,36) - 1);
+  const TotalAmount = (100000 * AllowedLoan) / EMI;
   res.status(200).json({
     success: true,
     TotalAmount: TotalAmount.toFixed(2),

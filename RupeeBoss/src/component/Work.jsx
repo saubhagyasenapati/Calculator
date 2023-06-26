@@ -71,7 +71,7 @@ const Work = () => {
           <div className="infocontent">
             <div >
               <div className="title">
-                <p>What you get?</p>
+                <p>What you get</p>
               </div>
               <div className="subtitle1">
                 <p>Access a wide range of loan products from over 100 banks and NBFCs.</p>

@@ -277,6 +277,7 @@ margin: 0;
     height: 8px;
     background-color:#6CDCF4;
     border-radius: 100px;
+   
   }
             
   .resultgraph{
@@ -284,6 +285,7 @@ margin: 0;
     align-items: center;
     width: 100%;
     margin-top: 10px;
+    margin-bottom: 20px;
   }
 
   .resultgraph div{
@@ -297,3 +299,12 @@ margin: 0;
     height: 40%;
     width: 100%;
   }
+
+  .emi{
+    font-size: 26px;
+    font-weight: 500;
+  }
+  .emi .emiamount{
+    font-weight:600;
+  }
+

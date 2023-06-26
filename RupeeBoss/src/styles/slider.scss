@@ -40,7 +40,7 @@ $animationSpeed: 40s;
 	margin: auto;
 	overflow:hidden;
 	position: relative;
-	width: 80%;
+	width: 100%;
 	
 	&::before,
 	&::after {
@@ -73,6 +73,9 @@ $animationSpeed: 40s;
 		height: 100px;
 		width: 250px;
 	}
+	img{
+		object-fit: contain;
+	}
 }
 
 @media (max-width: 600px) {
@@ -93,10 +96,10 @@ $animationSpeed: 40s;
 	  }
 
 	  @media (max-width: 1024px) {
-		.partner{
-			height: 70vh;
-		}
-		.partner .title{
-			font-size: 50px;
-		}
-		  }
+.partner{
+	height: 70vh;
+}
+.partner .title{
+	font-size: 50px;
+}
+  }

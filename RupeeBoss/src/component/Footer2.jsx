@@ -56,9 +56,10 @@ const Footer2 = () => {
       <hr />
       <div className="lowerfooter">
         <div className="social">
-<img src={facebook} alt="" />
-<img src={twitter} alt="" />
-<img src={insta} alt="" />
+  <a href="https://www.facebook.com/rupeeboss/" target="_blank"><img src={facebook} alt="" /></a>
+<a href="https://twitter.com/RupeeBoss" target="_blank"><img src={twitter} alt="" /></a>
+<a href="https://www.instagram.com/rupeeboss/?hl=en" target="_blank"><img src={insta} alt="" /></a>
+
         </div>
         <div className="address">
           <div >

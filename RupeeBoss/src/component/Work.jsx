@@ -59,9 +59,9 @@ const Work = () => {
       <div className="title">
         <p>How we help you get quick loans</p>
       </div>
-      <div className="subtitle">
+      {/* <div className="subtitle">
         <p>This is a process, how you can get loan for your self.</p>
-      </div>
+      </div> */}
       <div className="workDiv">
         {work.map((item) => {
           return <WorkCompoent item={item} />;
@@ -74,7 +74,7 @@ const Work = () => {
                 <p>What you get?</p>
               </div>
               <div className="subtitle1">
-                <p>Access a wide range of loan products from over 100 banks and non-banking financial companies (NBFCs).</p>
+                <p>Access a wide range of loan products from over 100 banks and NBFCs.</p>
               </div>
             </div>
           </div>
@@ -85,12 +85,7 @@ const Work = () => {
 <div className="TestimonialDiv">
   <div className="testemonialcontent">
     <div className="title">
-      <p>What do they think?</p>
-    </div>
-    <div className="subtitle2">
-      <p >
-      Lorem ipsum dolor sit amet consectetur. Aliquet ut ante ut eu. Id viverra libero est nLorem ipsum dolor sit amet consectetur. Aliquet ut ante ut eu. Id viverra libero est n
-      </p>
+      <p>What our clients think</p>
     </div>
     <div className="testemonial">
 <TestemonialComponent/>

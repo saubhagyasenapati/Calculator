@@ -22,21 +22,21 @@ const Home = ({calculator,setCalculator}) => {
             </p>
           </div>
           <div>
-           
-              <button className="loanButton" onClick={()=>setCalculator(true)}>Loan Calculator</button>
+           <Link to="/calculator"> <button className="loanButton">Loan Calculator</button></Link>
+             
            
           </div>
         </div>
         <div className="lowersec">
           <div className="info">
-            <p className="num">16000cr+</p>
+            <p className="num">16000 cr+</p>
             <p className="text">Loan Disbursals Done</p>
           </div>
           <div className="hrr"></div>
           <div className="info">
-            <p className="num">18000+ MSME</p>
+            <p className="num">18k+</p>
 
-            <p className="text">Retail Customers</p>
+            <p className="text">MSME & Retail Customers</p>
           </div>
         </div>
       </div>

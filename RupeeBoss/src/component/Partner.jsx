@@ -1,5 +1,14 @@
 import React from 'react'
 import'../styles/slider.scss'
+import logo1 from "../assets/logo1.png"
+import logo2 from "../assets/logo2.png"
+import logo3 from "../assets/logo3.png"
+import logo4 from "../assets/logo4.png"
+import logo5 from "../assets/logo5.png"
+import logo6 from "../assets/logo6.png"
+import logo7 from "../assets/logo7.png"
+import logo8 from "../assets/logo8.png"
+import logo9 from "../assets/logo9.png"
 const Partner = () => {
   return (
     <div className='partner'>
@@ -7,46 +16,58 @@ const Partner = () => {
       <div class="slider">
 	<div class="slide-track">
 		<div class="slide">
-			<img src="https://logos-world.net/wp-content/uploads/2020/11/HDFC-Bank-Logo.png" height="100" width="250" alt="" />
+			<img src={logo1} height="100" width="250" alt="" />
 		</div>
 		<div class="slide">
-			<img src="https://logos-download.com/wp-content/uploads/2016/06/Yes_Bank_logo.png" height="100" width="250" alt="" />
+			<img src={logo2} height="100" width="250" alt="" />
 		</div>
 		<div class="slide">
-			<img src="https://www.axisbank.com/images/default-source/gallery/gallery_img5.jpg" height="100" width="250" alt="" />
+			<img src={logo3}height="100" width="250" alt="" />
 		</div>
 		<div class="slide">
-			<img src="https://getvectorlogo.com/wp-content/uploads/2018/12/icici-bank-vector-logo.png" height="100" width="250" alt="" />
+			<img src={logo4} height="100" width="250" alt="" />
 		</div>
 		<div class="slide">
-			<img src="https://logos-download.com/wp-content/uploads/2016/06/Kotak_Mahindra_Bank_logo.png" height="100" width="250" alt="" />
+			<img src={logo5} height="100" width="250" alt="" />
 		</div>
 		<div class="slide">
-			<img src="https://www.freepnglogos.com/uploads/sbi-logo-png/sbi-logo-state-bank-india-group-vector-eps-0.png" height="100" width="250" alt="" />
+			<img src={logo6} height="100" width="250" alt="" />
 		</div>
 		<div class="slide">
-			<img src="https://seekvectorlogo.com/wp-content/uploads/2022/03/rbl-bank-ltd-vector-logo-2022-small.png" height="100" width="250" alt="" />
+			<img src={logo7} height="100" width="250" alt="" />
 		</div>
 		<div class="slide">
-			<img src="https://logos-world.net/wp-content/uploads/2020/11/HDFC-Bank-Logo.png" height="100" width="250" alt="" />
+			<img src={logo8} height="100" width="250" alt="" />
 		</div>
 		<div class="slide">
-			<img src="https://logos-download.com/wp-content/uploads/2016/06/Yes_Bank_logo.png" height="100" width="250" alt="" />
+			<img src={logo9} height="100" width="250" alt="" />
+		</div>\
+		<div class="slide">
+			<img src={logo1} height="100" width="250" alt="" />
 		</div>
 		<div class="slide">
-			<img src="https://www.axisbank.com/images/default-source/gallery/gallery_img5.jpg" height="100" width="250" alt="" />
+			<img src={logo2} height="100" width="250" alt="" />
 		</div>
 		<div class="slide">
-			<img src="https://getvectorlogo.com/wp-content/uploads/2018/12/icici-bank-vector-logo.png" height="100" width="250" alt="" />
+			<img src={logo3}height="100" width="250" alt="" />
 		</div>
 		<div class="slide">
-			<img src="https://logos-download.com/wp-content/uploads/2016/06/Kotak_Mahindra_Bank_logo.png" height="100" width="250" alt="" />
+			<img src={logo4} height="100" width="250" alt="" />
 		</div>
 		<div class="slide">
-			<img src="https://www.freepnglogos.com/uploads/sbi-logo-png/sbi-logo-state-bank-india-group-vector-eps-0.png" height="100" width="250" alt="" />
+			<img src={logo5} height="100" width="250" alt="" />
 		</div>
 		<div class="slide">
-			<img src="https://seekvectorlogo.com/wp-content/uploads/2022/03/rbl-bank-ltd-vector-logo-2022-small.png" height="100" width="250" alt="" />
+			<img src={logo6} height="100" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<img src={logo7} height="100" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<img src={logo8} height="100" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<img src={logo9} height="100" width="250" alt="" />
 		</div>
 	</div>
 </div>

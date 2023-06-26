@@ -6,37 +6,27 @@ const BussinessLoan = () => {
   const API = import.meta.env.VITE_API_URL;
   const [loanAmount, setLoanAmount] = useState('');
   const [loanTenure, setLoanTenure] = useState('');
-  const [incorporationDate, setIncorporationDate] = useState('');
-  const [turnover, setTurnover] = useState('');
-  const [interestPaid, setInterestPaid] = useState('');
-  const [profitAfterTax, setProfitAfterTax] = useState('');
-  const [depreciation, setDepreciation] = useState('');
-  const [remuneration, setRemuneration] = useState('');
   const [currentEMIPaying, setCurrentEMIPaying] = useState('');
-  const [numEMIPaid, setNumEMIPaid] = useState('');
-  const [eligibiilty, setEligibiilty] = useState("")
+  const [NetMonthlyIncome, setNetMonthlyIncome] = useState('');
+  const [Interest, setInterest] = useState('');
+  const [EMI, setEMI] = useState("")
   const [accept, setaccept] = useState(false)
   const handleSubmit = async(event) => {
     event.preventDefault();
   
     const requestData = {
-     "Amount":loanAmount,
-     "Tenure":loanTenure,
-      "Date":incorporationDate,
-     "Turnover":turnover,
-     "InterestPaidonLoan":interestPaid,
-     "PAT":profitAfterTax,
-     "Depr":depreciation,
-     "DirRemuration":remuneration,
-      "TotalEMI":currentEMIPaying,
-      "NoOfEMIPaid":numEMIPaid,
+      
+        "NetMonthlyIncome":NetMonthlyIncome,
+      "Obligations":currentEMIPaying,
+      "loanAmount":loanAmount,
+      "Interest": Interest,
+      "loanTenure": loanTenure
+    
     };
 
     await axios.post(`${API}/api/v1/calculator/bussiness`,requestData)
       .then((response) => {
-        setEligibiilty(response.data.message)
-        setaccept(response.data.Accept)
-        console.log(response.data);
+        setEMI(response.data.TotalAmount)
       })
       .catch((error) => {
         alert("Error Occured We Are Working on It")
@@ -51,6 +41,16 @@ const BussinessLoan = () => {
       <div className="bussinessloanbox">
         <form onSubmit={handleSubmit}>
           <div className="bussinessbox">
+          <div>
+              <input
+                className="Insertion"
+                type="number"
+                name="NetMonthlyIncome"
+                value={NetMonthlyIncome}
+                onChange={(e) => setNetMonthlyIncome(e.target.value)}
+                placeholder="Net Monthly Income"
+              />
+            </div>
             <div>
               <input
                 className="Insertion"
@@ -59,6 +59,7 @@ const BussinessLoan = () => {
                 value={loanAmount}
                 onChange={(e) => setLoanAmount(e.target.value)}
                 placeholder="Loan Amount"
+                min={100000}
               />
             </div>
             <div>
@@ -74,61 +75,11 @@ const BussinessLoan = () => {
             <div>
               <input
                 className="Insertion"
-                type="date"
-                name="incorporationDate"
-                value={incorporationDate}
-                onChange={(e) => setIncorporationDate(e.target.value)}
-                placeholder="Date of Incorporation"
-              />
-            </div>
-            <div>
-              <input
-                className="Insertion"
                 type="number"
-                name="turnover"
-                value={turnover}
-                onChange={(e) => setTurnover(e.target.value)}
-                placeholder="Turnover"
-              />
-            </div>
-            <div>
-              <input
-                className="Insertion"
-                type="number"
-                name="interestPaid"
-                value={interestPaid}
-                onChange={(e) => setInterestPaid(e.target.value)}
-                placeholder="Interest Paid on Loans"
-              />
-            </div>
-            <div>
-              <input
-                className="Insertion"
-                type="number"
-                name="profitAfterTax"
-                value={profitAfterTax}
-                onChange={(e) => setProfitAfterTax(e.target.value)}
-                placeholder="Profit After Tax"
-              />
-            </div>
-            <div>
-              <input
-                className="Insertion"
-                type="number"
-                name="depreciation"
-                value={depreciation}
-                onChange={(e) => setDepreciation(e.target.value)}
-                placeholder="Depreciation"
-              />
-            </div>
-            <div>
-              <input
-                className="Insertion"
-                type="number"
-                name="remuneration"
-                value={remuneration}
-                onChange={(e) => setRemuneration(e.target.value)}
-                placeholder="Dir/Partners Remuneration"
+                name="Interest"
+                value={Interest}
+                onChange={(e) => setInterest(e.target.value)}
+                placeholder="Interest"
               />
             </div>
             <div>
@@ -141,16 +92,6 @@ const BussinessLoan = () => {
                 placeholder="Total EMI Paying Currently"
               />
             </div>
-            <div>
-              <input
-                className="Insertion"
-                type="number"
-                name="numEMIPaid"
-                value={numEMIPaid}
-                onChange={(e) => setNumEMIPaid(e.target.value)}
-                placeholder="No. of EMI Paid"
-              />
-            </div>
           </div>
           <div>
             <button className="loancheckbutton" type="submit">
@@ -158,9 +99,9 @@ const BussinessLoan = () => {
             </button>
           </div>
         </form>
-        <div className="eligible">
+        <div className="emi">
       {
-        eligibiilty&& <p className={accept?"Green":"Red"}>{eligibiilty}</p>
+        EMI&& <p >You are eligible for a loan amount upto <span className='emiamount'>{EMI}</span></p>
       }
       </div>
       </div>

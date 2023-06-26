@@ -7,7 +7,7 @@ import WorkingCapital from '../subcomponent/WorkingCapital';
 import LoanEMI from '../subcomponent/LoanEMI';
 const Calculator = ({calculator,setCalculator}) => {
   const [activeComponent, setActiveComponent] = useState('component1');
-  const [isClicked,setisClicked]=useState(1)
+  const [isClicked,setisClicked]=useState(2)
   const handleButtonClick = (componentName,number) => {
     setActiveComponent(componentName);
     setisClicked(number)
@@ -18,17 +18,16 @@ const Calculator = ({calculator,setCalculator}) => {
       <div className='LoanCalbox'>
     
       <p className='titleCal'>Loan Calculator</p>
-      <img src={close} alt="" onClick={()=>setCalculator(false)}/>
       </div>
          
           <div className="calculator">
       <div className="button-container">
+      <div className={isClicked==2 ? 'button-clicked' : 'button-notclicked'} onClick={() => handleButtonClick('component2',2)}>
+       <p >Business Loan Calculator</p>
+       </div>
         <div  className={isClicked==1 ? 'button-clicked' : 'button-notclicked'} onClick={() => handleButtonClick('component1',1)}>
         <p >Personal Loan Calculator</p>
         </div>
-       <div className={isClicked==2 ? 'button-clicked' : 'button-notclicked'} onClick={() => handleButtonClick('component2',2)}>
-       <p >Bussiness Loan Calculator</p>
-       </div>
         <div className={isClicked==3 ? 'button-clicked' : 'button-notclicked'}onClick={() => handleButtonClick('component3',3)}>
         <p >Home Loan Calculator</p>
         </div>

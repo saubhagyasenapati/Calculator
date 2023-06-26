@@ -15,11 +15,6 @@ const CalculatorPage = () => {
     exit={{ opacity: 0 }}
     >  
      <Calculator/>
-     <Features />
-      <Offers />
-      <Msme />
-      <Work />
-      <Footer />
     </motion.div>
   )
 }

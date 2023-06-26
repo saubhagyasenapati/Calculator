@@ -3,82 +3,84 @@ import circle from "../assets/circle3.png";
 import axios from "axios";
 
 import rupee from "../assets/rupee.png";
-import { PieChart } from "./PieChart";
+import { PieChart  } from "./PieChart";
 const LoanEMI = () => {
   const API = import.meta.env.VITE_API_URL;
-  const [eligibiilty, setEligibiilty] = useState("");
-  const [accept, setaccept] = useState(false);
-  const [loanAmount, setLoanAmount] = useState("");
-  const [loanTenure, setLoanTenure] = useState("");
-  const [income, setIncome] = useState("");
-  const [obligations, setObligations] = useState("");
-  const handleSubmit = async (event) => {
-    event.preventDefault();
+  const [EMI, setEMI] = useState();
+  const [Total, setTotal] = useState();
+  const [success,setSuccess]=useState(false)
+  const [loanAmount, setLoanAmount] = useState('');
+  const [interest, setInterest] = useState('');
+  const [loanTenure, setLoanTenure] = useState('');
 
-    // Create the request payload
-    const requestData = {
-      Amount: loanAmount,
-      Tenure: loanTenure,
-      Income: income,
-      Obligation: obligations,
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const formData = {
+      loanAmount: loanAmount,
+      interest: interest,
+      loanTenure: loanTenure
     };
-
-    // Send the Axios request
-    await axios
-      .post(`${API}/api/v1/calculator/personal`, requestData)
+    var data = [
+        ["Task", "Hours per Day"],
+        ["Loan EMI",loanAmount],
+        ["Total Payable Interest",EMI],
+        ["Total Payment(Principal + Int)",Total],
+      ];
+    axios.post(`${API}/api/v1/calculator/emi`, formData)
       .then((response) => {
-        setEligibiilty(response.data.message);
-        setaccept(response.data.Accept);
-        console.log(response.data);
+        setEMI(response.data.Interest);
+        setTotal(response.data.Total);
+        setSuccess(response.data.success)
       })
       .catch((error) => {
         alert("Error Occured We Are Working on It");
       });
   };
+  
   return (
     <div className="Mainbox">
       <p className="loanTitle">
-        Calculate your Personal Loan EMI and Eligibility Status Due in a snap!
+        Calculate your  EMI!
       </p>
       <div className="EmiBox">
         <div className="box">
           <p className="heading">EMI Calculator</p>
-
-          <form action="">
-            <div>
-              <input
-                className="Insertion"
-                type="number"
-                name="loanAmount"
-                value={loanAmount}
-                onChange={(e) => setLoanAmount(e.target.value)}
-                placeholder="Loan Amount"
-              />
-            </div>
-            <div>
-              <input
-                className="Insertion"
-                type="number"
-                name="loanAmount"
-                value={loanAmount}
-                onChange={(e) => setLoanAmount(e.target.value)}
-                placeholder="Interest"
-              />
-            </div>
-            <div>
-              <input
-                className="Insertion"
-                type="number"
-                name="loanAmount"
-                value={loanAmount}
-                onChange={(e) => setLoanAmount(e.target.value)}
-                placeholder="Loan Tenure"
-              />
-            </div>
-            <button className="loancheckbutton" type="submit">
-              Submit
-            </button>
-          </form>
+          <form onSubmit={handleSubmit}>
+      <div>
+        <input
+          className="Insertion"
+          type="number"
+          name="loanAmount"
+          value={loanAmount}
+          onChange={(e) => setLoanAmount(e.target.value)}
+          placeholder="Loan Amount"
+        />
+      </div>
+      <div>
+        <input
+          className="Insertion"
+          type="number"
+          value={interest}
+          name="interest"
+          onChange={(e) => setInterest(e.target.value)}
+          placeholder="Interest"
+        />
+      </div>
+      <div>
+        <input
+          className="Insertion"
+          type="number"
+          name="loantenure"
+          value={loanTenure}
+          onChange={(e) => setLoanTenure(e.target.value)}
+          placeholder="Loan Tenure"
+        />
+      </div>
+      <button className="loancheckbutton" type="submit">
+        Submit
+      </button>
+    </form>
         </div>
         <div className="box">
           <p className="heading">Loan Details</p>
@@ -87,33 +89,36 @@ const LoanEMI = () => {
               <p>Loan EMI</p>
             </div>
 
-            <div className="boxinside">
+           {success&&<div className="boxinside">
               <p>
                 <img src={rupee} alt="" />
+                {loanAmount}
               </p>
-            </div>
+            </div>} 
           </div>
           <div className="emiresult">
             <div className="title">
               <p>Total Payable Interest</p>
             </div>
 
-            <div className="boxinside">
+            {success&&<div className="boxinside">
               <p>
                 <img src={rupee} alt="" />
+                {success&&EMI}
               </p>
-            </div>
+            </div>}
           </div>
           <div className="emiresult">
             <div className="title">
               <p>Total Payment (Principal + Int)</p>
             </div>
 
-            <div className="boxinside">
+           {success&&<div className="boxinside">
               <p>
                 <img src={rupee} alt="" />
+                {success&&Total}
               </p>
-            </div>
+            </div>} 
           </div>
         </div>
         <div className="box">
@@ -145,7 +150,7 @@ const LoanEMI = () => {
             </div>
             </div>  
             <div className="lowerbox">
-        <PieChart/>
+                {success&&<PieChart amount={loanAmount} interest={EMI} total={Total} />}
             </div>
         </div>
       </div>

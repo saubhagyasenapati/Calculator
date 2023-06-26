@@ -3,7 +3,7 @@ import React from 'react'
 const Feature = (props) => {
   return (
     <div className='feature'>
-      <div>
+      <div className='roundicon'>
         <img src={props.item.imageUrl} alt="" />
       </div>
       <div>

@@ -1,8 +1,8 @@
 import React from 'react'
 import Feature from '../subcomponent/Feature';
-import clock from "../assets/clock.png"
-import lock from "../assets/lock.png"
-import headphone from "../assets/headphone.png"
+import clock from "../assets/vector3.svg"
+import tick from "../assets/vvector2.svg"
+import headphone from "../assets/vector1.svg"
 const Features = () => {
     const feature = [
       {
@@ -13,12 +13,12 @@ const Features = () => {
         {   
           title: "Easy Approval",
           description: "We understand that time is of the essence when it comes to securing funding for your small business.We have designed our loan application process to be quick, simple, and hassle-free, ensuring easy approval and access to the funds you seek.",
-          imageUrl: clock
+          imageUrl: tick
         },
         {
           title: "Quick Disbursal",
           description: "We know that delays can hinder your progress and limit your ability to seize opportunities. We prioritize quick disbursal, ensuring that you can access the capital you need in a timely manner.",
-          imageUrl: lock
+          imageUrl: clock
         },
        
       ];

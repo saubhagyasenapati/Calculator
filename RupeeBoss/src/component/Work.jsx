@@ -15,7 +15,7 @@ const Work = () => {
     {
       num: "01",
       alignLeft: true,
-      title: "Quick Query",
+      title: "Quick Inquiry",
       description:
         "Streamline your loan application process with our user-friendly online application platform or reach out to us directly for a quick inquiry. Our dedicated team promptly assists you, guiding you through the loan options and requirements.",
       imageUrl: Query,
@@ -23,7 +23,7 @@ const Work = () => {
     {
       alignLeft: false,
       num: "02",
-      title: "Multiple Quotes from Various Banks and NBFCs",
+      title: "Multiple Quotes from Banks and NBFCs",
       description:
         "We leverage our extensive network of banks and non-banking financial companies (NBFCs) to provide you with multiple loan quotes. Compare and choose the best loan offer that suits your business needs and preferences.",
       imageUrl: Quotes,
@@ -39,7 +39,7 @@ const Work = () => {
     {
       alignLeft: false,
       num: "04",
-      title: "Sanction Approved/Rejected",
+      title: "Sanction Approved or Rejected",
       description:
         "Once you have submitted the necessary documents, our expert team reviews your application promptly. We strive to provide quick sanction approvals, keeping you informed throughout the process. In case of rejection, we provide transparent feedback and explore alternative options.",
       imageUrl: Approval,

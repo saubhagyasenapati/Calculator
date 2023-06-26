@@ -285,10 +285,18 @@ height: 100%;
   width: 33%;
 }
 
-.feature img {
-  width: 62px;
-  margin-bottom: 15px;
+.roundicon {
+  background-color: red;
+ width: 60px;
+ height: 60px;
+ display: flex;
+ align-items: center;
+ justify-content:center ;
+border-radius: 30px;
+margin-bottom: 10px;
 }
+
+
 
 .feature .title {
   font-size: 19px;

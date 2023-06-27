@@ -318,11 +318,37 @@ margin: 0;
   .emi .emiamount{
     font-weight:600;
   }
+  .bussinessloanbox .box{
+    width: 30%;
+    background-color: #ffffff;
+    margin: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .bussinessloanbox .box .heading{
+    text-align: center;
+  }
+  
 
 @media (max-width:600px){
+  .bussinessloanbox{
+    display: flex;
+    flex-direction: column;
+  }
+  .bussinessloanbox form{
+    width: 100%;
+  }
   .bussinessbox{
     display: flex;
     flex-direction: column;
+    width: 100%;
+  }
+  .bussinessloanbox .box{
+    width: 100%;
   }
   .personalloanbox{
      width: 100%;
@@ -361,17 +387,3 @@ margin: 0;
   }
 }
 
-.bussinessloanbox .box{
-  width: 30%;
-  background-color: #ffffff;
-  margin: 20px;
-  border-radius: 10px;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.bussinessloanbox .box .heading{
-  text-align: center;
-}

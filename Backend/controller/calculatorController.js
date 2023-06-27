@@ -34,7 +34,7 @@ exports.getBussinessLoanCalculator = catchAsyncErrors(async (req, res) => {
   const TotalAmount = (100000 * AllowedLoan) / EMI;
   res.status(200).json({
     success: true,
-    EMI:EMI,
+    EMI:EMI.toFixed(2),
     TotalAmount: TotalAmount.toFixed(2),
   });
 });

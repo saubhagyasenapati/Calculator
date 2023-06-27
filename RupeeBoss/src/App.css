@@ -747,7 +747,7 @@ justify-content: center;
   display: flex;
   flex-direction: column;
   background-color: #EFEFEF;
-  padding: 100px 50px;
+  padding: 70px 50px;
   color: #263238;
 }
 .updates .heading{
@@ -762,7 +762,7 @@ justify-content: center;
 .updatecard .content{
   padding: 15px 15px 40px 15px;
   background-color: #202020;
-
+  padding: 30px;
   
 }
 .updatecard .title{
@@ -771,24 +771,27 @@ justify-content: center;
   font-weight: 600;
  text-align: left;
  color: #ffffff;
+
 }
 .updatecard .date{
   font-family: 'Work Sans', sans-serif;
   font-size: 16px;
   font-weight: 700;
  text-align: left;
-color: #FF4141;
+color: #ffffff;
 }
 .updatecard .subtitle{
   color: #ffffff;
 }
 .updatecard .updateimg{
-width: 100%;
+width: 40%;
 object-fit: cover;
 }
 .updatecard{
+  display: flex;
+  flex-direction: row;
   border-radius: 10px;
-  width: 24%;
+  width: 40%;
   margin: 10px;
 }
 .updatecard .subtitle{
@@ -930,13 +933,13 @@ object-fit: contain;
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 100px 100px;
+  padding: 80px 80px;
   align-items: center;
   justify-content: center;
   background-color: #EFEFEF;
 }
 .TestimonialDiv .testemonialcontent{
-  width: 50%;
+  width: 80%;
 padding-right: 80px;
 }
 .testemonialcontent .title{
@@ -972,6 +975,7 @@ padding-right: 80px;
   flex-direction: column;
 padding:0px  15px;
 margin-left: 30px;
+position: relative;
 
 }
 .Testimonial .review{

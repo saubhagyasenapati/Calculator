@@ -13,7 +13,7 @@ const Footer2 = () => {
         <div className="logo">
           <img src={logo} alt="" />
           <p className="description">
-            Unlock your business potential with our tailored fintech solutions.
+          When you need a loan you are not alone
           </p>
         </div>
         <div className="footerlinks">

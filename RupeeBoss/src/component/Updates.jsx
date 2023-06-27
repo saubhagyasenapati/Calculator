@@ -8,37 +8,14 @@ const Updates = () => {
           title: "MSME Startup Expo 2023",
           date:"27-28-29 June",
           description:
-            "Stall No. 28. WTC,Cuffe Parade,Mumbai",
+            "Stall No. 28. World Trade Center,Cuffe Parade,Mumbai",
           imageUrl:photo,
         },
-        {
-         
-          title: "MSME Bharat Manch",
-          description:
-            "MSME Bharat Manch",
-          imageUrl: temp,
-        },
-        {
-        
-          title: "MSME Bharat Manch",
-        
-          description:
-            "MSME Bharat Manch",
-          imageUrl: temp,
-        },
-        {
-        
-            title: "MSME Bharat Manch",
-           
-            description:
-              "MSME Bharat Manch",
-            imageUrl: temp,
-          },
     ]
   return (
     <div className='updates'>
       <div className='heading'>
-        <p>Latest Updates</p>
+        <p>Latest Events</p>
       </div>
       <div className='updatecards'>
         {update.map((item)=>{

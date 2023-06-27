@@ -95,7 +95,7 @@ const PersonalLoan = () => {
    
     </div>
 
-    <img src={circle} alt="circle" className="loancircle" />
+    {/* <img src={circle} alt="circle" className="loancircle" /> */}
   </div>
   );
 };

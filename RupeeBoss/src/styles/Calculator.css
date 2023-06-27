@@ -32,6 +32,7 @@
   font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 16px;
   font-weight: 700;
+  cursor: pointer;
 }
 
 .button-clicked {
@@ -57,7 +58,7 @@
   font-family: "DM Sans", sans-serif;
   font-size: 18px;
   position: relative;
-  padding-bottom: 200px;
+  padding-bottom: 100px;
   background-image: url("../assets/CalculatorPhoto.png");
   background-repeat: no-repeat;
   background-size: cover;

@@ -45,7 +45,7 @@ const BussinessLoan = () => {
                 name="NetMonthlyIncome"
                 value={NetMonthlyIncome}
                 onChange={(e) => setNetMonthlyIncome(e.target.value)}
-                placeholder="Net Monthly Income"
+                placeholder="Net Monthly Profit"
               />
             </div>
             <div>
@@ -67,11 +67,11 @@ const BussinessLoan = () => {
         </form>
         <div className="emi">
       {
-        EMI&& <p >You are eligible for a loan amount upto <span className='emiamount'>{EMI}</span></p>
+        EMI&& <p >You are eligible for a max loan amount upto <span className='emiamount'>{EMI}</span></p>
       }
       </div>
       </div>
-      <img src={circle} alt="circle" className="loancircle" />
+      {/* <img src={circle} alt="circle" className="loancircle" /> */}
     </div>
   );
 };

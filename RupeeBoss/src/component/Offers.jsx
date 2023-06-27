@@ -8,6 +8,11 @@ import Unsecured from "../assets/Unsecured.png";
 import arrow from "../assets/upperarrow.png"
 
 const Offers = () => {
+  const APIOLD = import.meta.env.VITE_APIOLD;
+  const URL1=`${APIOLD}/loan-against-property`
+  const URL2=`${APIOLD}/home-loan`
+  const URL3=`${APIOLD}/working-capital-emi-calculator`
+  const URL4=`${APIOLD}/business-loan`
 const [dropdown, setdropdown] = useState(false)
   const handleDrop=()=>{
 if(dropdown===true){
@@ -57,13 +62,13 @@ else{
             {
              <div className={dropdown?"dropdown":"nodropdown"} >
               <div>
-              <a href="https://www.rupeeboss.com/loan-against-property" target="_blank">Loan Against Property</a>
+              <a href={URL1} target="_blank">Loan Against Property</a>
               </div>
             <div>
-            <a href="https://www.rupeeboss.com/home-loan" target="_blank">Home Loans</a>
+            <a href={URL2} target="_blank">Home Loans</a>
             </div>
            <div>
-           <a href="https://www.rupeeboss.com/working-capital-emi-calculator" target="_blank">Working Capital</a>
+           <a href={URL3} target="_blank">Working Capital</a>
            </div>
            </div>
             } 
@@ -77,7 +82,7 @@ else{
                 <p className="subtitle">{offer[0].description}</p>
               </div>
               <div className="buttonoffer">
-                <a href="https://www.rupeeboss.com/business-loan" target="_blank" rel="noopener noreferrer">Check</a>  
+                <a href={URL4} target="_blank" rel="noopener noreferrer">Check</a>  
               </div>  
             </div>
         

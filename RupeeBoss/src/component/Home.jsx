@@ -14,7 +14,7 @@ const Home = ({calculator,setCalculator}) => {
         <div>
           <div>
             <p className="title">
-              Empowering small businesses with Quick Loans
+            Empowering MSMEs with Quick Loans
             </p>
           </div>
           <div>

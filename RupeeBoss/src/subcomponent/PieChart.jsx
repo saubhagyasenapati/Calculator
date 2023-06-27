@@ -45,8 +45,8 @@ export const PieChart = ({ amount, interest, total }) => {
     datasets: [
       {
         data: [amount, interest,total],
-        backgroundColor: ['#F51E1E', '#FFCD1B','#6CDCF4'],
-        hoverBackgroundColor: ['#F51E1E', '#FFCD1B','#6CDCF4'],
+        backgroundColor: ['#F51E1E', '#56B280','#75BBE5'],
+        hoverBackgroundColor: ['#F51E1E', '#56B280 ','#75BBE5'],
       },
     ],
  

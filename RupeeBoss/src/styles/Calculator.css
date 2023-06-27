@@ -107,7 +107,7 @@
 }
 .bussinessbox {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 .homeloanbox {
   width: 100%;
@@ -311,3 +311,44 @@ margin: 0;
     font-weight:600;
   }
 
+@media (max-width:600px){
+  .bussinessbox{
+    display: flex;
+    flex-direction: column;
+  }
+  .personalloanbox{
+     width: 100%;
+     
+  }
+  .personalbox{
+    grid-template-columns:repeat(1,1fr)
+  }
+  .homebox{
+    grid-template-columns:repeat(1,1fr)
+  }
+  .workingbox{
+    display: flex;
+    flex-direction: column;
+  }
+  .workingLeft{
+    width: 100%;
+  }
+  .workingRight{
+    width:100%
+  }
+  .EmiBox{
+    display: flex;
+    flex-direction: column;
+  }
+  .EmiBox .box{
+    width: 100%;
+  }
+  .button-container{
+    display: grid;
+    grid-template-columns:repeat(3,1fr) ;
+  }
+  .button-container div{
+    font-size: 14px;
+    padding: 10px;
+  }
+}

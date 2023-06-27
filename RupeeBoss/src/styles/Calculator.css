@@ -104,11 +104,18 @@
 }
 
 .bussinessloanbox {
+display: flex;
   width: 100%;
+}
+.bussinessloanbox form {
+  width: 60%;
 }
 .bussinessbox {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 .homeloanbox {
   width: 100%;
@@ -352,4 +359,19 @@ margin: 0;
     font-size: 14px;
     padding: 10px;
   }
+}
+
+.bussinessloanbox .box{
+  width: 30%;
+  background-color: #ffffff;
+  margin: 20px;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bussinessloanbox .box .heading{
+  text-align: center;
 }

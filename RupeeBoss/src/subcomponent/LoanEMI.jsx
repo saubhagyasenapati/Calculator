@@ -6,7 +6,8 @@ import rupee from "../assets/rupee.png";
 import { PieChart  } from "./PieChart";
 const LoanEMI = () => {
   const API = import.meta.env.VITE_API_URL;
-  const [EMI, setEMI] = useState();
+  const [EMI1, setEMI] = useState();
+  const [emi, setemi] = useState();
   const [Total, setTotal] = useState();
   const [success,setSuccess]=useState(false)
   const [loanAmount, setLoanAmount] = useState('');
@@ -24,11 +25,12 @@ const LoanEMI = () => {
     var data = [
         ["Task", "Hours per Day"],
         ["Loan EMI",loanAmount],
-        ["Total Payable Interest",EMI],
+        ["Total Payable Interest",EMI1],
         ["Total Payment(Principal + Int)",Total],
       ];
     axios.post(`${API}/api/v1/calculator/emi`, formData)
       .then((response) => {
+        setemi(response.data.emi)
         setEMI(response.data.Interest);
         setTotal(response.data.Total);
         setSuccess(response.data.success)
@@ -89,36 +91,36 @@ const LoanEMI = () => {
               <p>Loan EMI</p>
             </div>
 
-           {success&&<div className="boxinside">
+           <div className="boxinside">
               <p>
                 <img src={rupee} alt="" />
-                {loanAmount}
+                {emi}
               </p>
-            </div>} 
+            </div>
           </div>
           <div className="emiresult">
             <div className="title">
               <p>Total Payable Interest</p>
             </div>
 
-            {success&&<div className="boxinside">
+            <div className="boxinside">
               <p>
                 <img src={rupee} alt="" />
-                {success&&EMI}
+                {EMI1}
               </p>
-            </div>}
+            </div>
           </div>
           <div className="emiresult">
             <div className="title">
               <p>Total Payment (Principal + Int)</p>
             </div>
 
-           {success&&<div className="boxinside">
+          <div className="boxinside">
               <p>
                 <img src={rupee} alt="" />
-                {success&&Total}
+                {Total}
               </p>
-            </div>} 
+            </div>
           </div>
         </div>
         <div className="box">
@@ -150,7 +152,7 @@ const LoanEMI = () => {
             </div>
             </div>  
             <div className="lowerbox">
-                {success&&<PieChart amount={loanAmount} interest={EMI} total={Total} />}
+                {success&&<PieChart amount={loanAmount} interest={EMI1} total={Total} />}
             </div>
         </div>
       </div>

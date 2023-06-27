@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import circle from '../assets/circle3.png';
+import rupee from "../assets/rupee.png";
 
 const BussinessLoan = () => {
   const API = import.meta.env.VITE_API_URL;
@@ -10,6 +11,7 @@ const BussinessLoan = () => {
   const [NetMonthlyIncome, setNetMonthlyIncome] = useState('');
   const [Interest, setInterest] = useState('');
   const [EMI, setEMI] = useState("")
+  const [Loan, setLoan] = useState("")
   const [accept, setaccept] = useState(false)
   const handleSubmit = async(event) => {
     event.preventDefault();
@@ -23,7 +25,9 @@ const BussinessLoan = () => {
 
     await axios.post(`${API}/api/v1/calculator/bussiness`,requestData)
       .then((response) => {
-        setEMI(response.data.TotalAmount)
+        setEMI(response.data.EMI)
+        setLoan(response.data.TotalAmount)
+        console.log(EMI,Loan);
       })
       .catch((error) => {
         alert("Error Occured We Are Working on It")
@@ -58,20 +62,72 @@ const BussinessLoan = () => {
                 placeholder="Total EMI Paying Currently"
               />
             </div>
-          </div>
-          <div>
+            <div>
             <button className="loancheckbutton" type="submit">
               Check Eligibility
             </button>
           </div>
+        
+          </div>
+         
         </form>
-        <div className="emi">
-      {
-        EMI&& <p >You are eligible for a max loan amount upto <span className='emiamount'>{EMI}</span></p>
-      }
+        <div className="box">
+          <p className="heading">You Are Eligible For</p>
+          <div className="emiresult">
+            <div className="title">
+              <p>Max Loan Amount</p>
+            </div>
+
+           <div className="boxinside">
+           <p>
+                <img src={rupee} alt="" />
+                {Loan}
+              </p>
+            </div>
+          </div>
+          <div className="emiresult">
+            <div className="title">
+              <p>Proposed EMI</p>
+            </div>
+
+            <div className="boxinside">
+            <p>
+                <img src={rupee} alt="" />
+              {EMI}
+              </p>
+            </div>
+          </div>
+          <div className="emiresult">
+            <div className="title">
+              <p>Rate of Interest</p>
+            </div>
+
+          <div className="boxinside">
+            
+              <p>
+              18% 
+              </p>
+
+             
+            </div>
+          </div>
+          <div className="emiresult">
+            <div className="title">
+              <p>Tenure</p>
+            </div>
+
+          <div className="boxinside">
+            
+              <p>
+               36 Months
+              </p>
+
+             
+            </div>
+          </div>
+        </div>
       </div>
-      </div>
-      {/* <img src={circle} alt="circle" className="loancircle" /> */}
+  
     </div>
   );
 };

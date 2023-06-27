@@ -6,9 +6,11 @@ const Home = ({calculator,setCalculator}) => {
   return (
     <div className="home">
       <div className="homeText">
-        <div className="CIBIL">
-          <a href="https://cibilrank.cibil.com/rupeeboss" target="_blank">Get 30% OFF On CIBIL Commercial report by clicking here.</a>
+      <a href="https://cibilrank.cibil.com/rupeeboss" target="_blank" className="CIBIL">
+        <div >
+         Get 30% OFF On CIBIL Commercial report by clicking here.
         </div>
+        </a>
         <div>
           <div>
             <p className="title">
@@ -34,7 +36,7 @@ const Home = ({calculator,setCalculator}) => {
           </div>
           <div className="hrr"></div>
           <div className="info">
-            <p className="num">18k+</p>
+            <p className="num">18K+</p>
 
             <p className="text">MSME & Retail Customers</p>
           </div>

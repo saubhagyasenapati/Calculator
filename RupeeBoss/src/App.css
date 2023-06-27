@@ -121,6 +121,7 @@ transition: all 0.2s ease-in-out;
 
 .CIBIL{
   background-color: #FF4141;
+
   font-family: 'Plus Jakarta Sans', sans-serif;
 font-size: 16px;
 padding: 15px 15px;
@@ -132,13 +133,11 @@ border-radius: 10px;
 width: 70%;
 margin: 0px;
 box-shadow: rgba(0, 0, 0, 0.35) 5px 10px 15px;
+text-decoration: none;
+color: #ffffff;
+}
 
-}
-.CIBIL a{
-  margin-bottom: 0rem;
-  text-decoration: none;
-  color: #ffffff;
-}
+
 .CIBIL:hover{
   opacity: 0.8;
 }
@@ -1292,6 +1291,8 @@ margin: 10px;
   align-items: center;
   justify-content: center;
   padding: 7% 5%;
+  width: 100vw;
+  height: 100vh;
 }
 .maphome img{
 width: 100%;

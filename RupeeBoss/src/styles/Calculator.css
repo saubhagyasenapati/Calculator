@@ -3,26 +3,29 @@
   background-color: #efefef;
 }
 
-.LoanCalbox{
+.LoanCalbox {
   display: flex;
   justify-content: center;
   position: relative;
   margin-top: 30px;
 }
-.LoanCalbox img{
-  position:absolute;
+
+.LoanCalbox img {
+  position: absolute;
   right: 40px;
-  transition: all 0.3 ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
-.LoanCalbox img:hover{
-  scale: 1.1;
-  transition: all 0.3 ease-in-out;
+
+.LoanCalbox img:hover {
+  transform: scale(1.1);
 }
+
 .button-container {
   display: flex;
   flex-direction: row;
   width: 100%;
 }
+
 .button-container div {
   width: 100%;
   display: flex;
@@ -40,19 +43,16 @@
   color: #ffffff;
   transition: all 0.3s ease-in-out;
 }
-.button-clicked p{
- margin: 0rem;
-}
-.button-notclicked p{
-  margin: 0rem;
- }
+
 .button-notclicked {
   color: #ff4141;
   transition: all 0.3s ease-in-out;
 }
+
 .personalloanbox {
   width: 60%;
 }
+
 .Mainbox {
   padding: 30px;
   font-family: "DM Sans", sans-serif;
@@ -62,13 +62,13 @@
   background-image: url("../assets/CalculatorPhoto.png");
   background-repeat: no-repeat;
   background-size: cover;
-
 }
+
 .personalbox {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-
 }
+
 .Insertion {
   padding: 10px;
   width: 90%;
@@ -94,7 +94,6 @@
   border-radius: 6px;
   background-color: #ff4141;
   color: #ffffff;
-  transition: all 0.3s ease-in-out;
 }
 
 .loancircle {
@@ -104,12 +103,14 @@
 }
 
 .bussinessloanbox {
-display: flex;
+  display: flex;
   width: 100%;
 }
+
 .bussinessloanbox form {
   width: 60%;
 }
+
 .bussinessbox {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -117,105 +118,95 @@ display: flex;
   flex-direction: column;
   width: 100%;
 }
+
 .homeloanbox {
   width: 100%;
 }
+
 .homebox {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
 
-.component-container{
-    transition: opacity 1s ease-in-out;
+.component-container {
+  transition: opacity 1s ease-in-out;
 }
 
-.titleCal{
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 40px;
-    font-family: 'Work Sans', sans-serif;
-    font-weight:600 ;
+.titleCal {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 40px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 600;
 }
 
-.CalculatorBox{
-    margin-bottom: 70px;
-    transition: all 0.3 ease-in-out;
-    height: 100%;
+.CalculatorBox {
+  margin-bottom: 70px;
+  transition: all 0.3s ease-in-out;
+  height: 100%;
 }
 
-.Red{
+.Red {
   color: #ff4141;
   font-size: 25px;
-  transition:all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   margin-bottom: 100px;
-  font-weight: 500
+  font-weight: 500;
 }
 
-.Green{
-    color: #42c207;
-    font-size: 25px;
-    margin-bottom: 100px;
-    transition:all 0.3s ease-in-out;
-    font-weight: 500;
+.Green {
+  color: #42c207;
+  font-size: 25px;
+  margin-bottom: 100px;
+  transition: all 0.3s ease-in-out;
+  font-weight: 500;
 }
 
-.workingbox{
-  display:flex ;
-}
-
-.workingform{
-display: grid;
-}
-
-/* .workingcapitalloanbox{
+.workingbox {
   display: flex;
-  flex-direction: row;
-  width: 100%;
-} */
-
-.workingcapitalloanbox .left{
-  width:70%
 }
 
-.workingloanbox{
-  width:100%
+.workingform {
+  display: grid;
 }
 
+.workingcapitalloanbox .left {
+  width: 70%;
+}
 
-
-.workingbox{
+.workingloanbox {
   width: 100%;
 }
-.workingLeft{
-width: 70%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px; /* Adjust the gap as per your preference */
-  
+
+.workingbox {
+  width: 100%;
 }
 
-.workingRight{
+.workingLeft {
+  width: 70%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.workingRight {
   margin-top: 20px;
   background-color: #ffffff;
   width: 25%;
   border-radius: 10px;
 }
 
-.eligible{
+.eligible {
   font-family: 'DM Sans', sans-serif;
   margin-top: 20px;
   text-align: center;
-
 }
-.workingbox{
+
+.EmiBox {
   display: flex;
 }
 
-.EmiBox{
-  display: flex;
-}
-
-.EmiBox .box{
+.EmiBox .box {
   width: 30%;
   background-color: #ffffff;
   margin: 20px;
@@ -225,21 +216,21 @@ width: 70%;
   flex-direction: column;
   align-items: center;
 }
-.EmiBox 
-.EmiBox .box .heading{
-  text-align: center;
 
+.EmiBox .box .heading {
+  text-align: center;
 }
-.EmiBox form{
+
+.EmiBox form {
   width: 90%;
 }
+
 .EmiBox .Insertion {
   padding: 10px;
   width: 100%;
-
 }
 
-.emiresult{
+.emiresult {
   display: flex;
   width: 100%;
   align-items: center;
@@ -247,15 +238,13 @@ width: 70%;
   margin: 10px 10px;
 }
 
-.emiresult .title{
-font-weight: 600;
-width: 30%;
-font-size: 14px;
+.emiresult .title {
+  font-weight: 600;
+  width: 30%;
+  font-size: 14px;
 }
-.emiresult .title p{
-margin: 0;
-  }
-.emiresult .boxinside{
+
+.emiresult .boxinside {
   border: 1px solid;
   width: 70%;
   display: flex;
@@ -263,127 +252,128 @@ margin: 0;
   padding: 3px;
   border-radius: 10px;
   margin-left: 10px;
-  }
-  .emiresult .boxinside p{
-    margin: 0;
-  }
-  .emiresult .boxinside p img{
-    margin: 10px 10px;
-  }
+}
 
-  .round1{
-    width: 8px;
-    height: 8px;
-    background-color:red;
-    border-radius: 100px;
-  }
-  .round2{
-    width: 8px;
-    height: 8px;
-    background-color:#FFCD1B;
-    border-radius: 100px;
-  }
-  .round3{
-    width: 8px;
-    height: 8px;
-    background-color:#6CDCF4;
-    border-radius: 100px;
-   
-  }
-            
-  .resultgraph{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    margin-top: 10px;
-    margin-bottom: 20px;
-  }
+.emiresult .boxinside p {
+  margin: 0;
+}
 
-  .resultgraph div{
-    margin: 0px 5px;
-  }
-  .resultgraph div p{
-    margin: 0px;
-  }
+.emiresult .boxinside p img {
+  margin: 10px 10px;
+}
 
-  .upperbox{
-    height: 40%;
-    width: 100%;
-  }
+.round1 {
+  width: 8px;
+  height: 8px;
+  background-color: red;
+  border-radius: 100px;
+}
 
-  .emi{
-    font-size: 26px;
-    font-weight: 500;
-  }
-  .emi .emiamount{
-    font-weight:600;
-  }
-  .bussinessloanbox .box{
-    width: 30%;
-    background-color: #ffffff;
-    margin: 20px;
-    border-radius: 10px;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .bussinessloanbox .box .heading{
-    text-align: center;
-  }
-  
+.round2 {
+  width: 8px;
+  height: 8px;
+  background-color: #ffcd1b;
+  border-radius: 100px;
+}
 
-@media (max-width:600px){
-  .bussinessloanbox{
+.round3 {
+  width: 8px;
+  height: 8px;
+  background-color: #6cdcf4;
+  border-radius: 100px;
+}
+
+.resultgraph {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.resultgraph div {
+  margin: 0px 5px;
+}
+
+.resultgraph div p {
+  margin: 0px;
+}
+
+.upperbox {
+  height: 40%;
+  width: 100%;
+}
+
+.emi {
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.emi .emiamount {
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .bussinessloanbox {
     display: flex;
     flex-direction: column;
   }
-  .bussinessloanbox form{
+
+  .bussinessloanbox form {
     width: 100%;
   }
-  .bussinessbox{
+
+  .bussinessbox {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
-  .bussinessloanbox .box{
+
+  .bussinessloanbox .box {
     width: 100%;
   }
-  .personalloanbox{
-     width: 100%;
-     
+
+  .personalloanbox {
+    width: 100%;
   }
-  .personalbox{
-    grid-template-columns:repeat(1,1fr)
+
+  .personalbox {
+    grid-template-columns: repeat(1, 1fr);
   }
-  .homebox{
-    grid-template-columns:repeat(1,1fr)
+
+  .homebox {
+    grid-template-columns: repeat(1, 1fr);
   }
-  .workingbox{
+
+  .workingbox {
     display: flex;
     flex-direction: column;
   }
-  .workingLeft{
+
+  .workingLeft {
     width: 100%;
   }
-  .workingRight{
-    width:100%
+
+  .workingRight {
+    width: 100%;
   }
-  .EmiBox{
+
+  .EmiBox {
     display: flex;
     flex-direction: column;
   }
-  .EmiBox .box{
+
+  .EmiBox .box {
     width: 100%;
   }
-  .button-container{
+
+  .button-container {
     display: grid;
-    grid-template-columns:repeat(3,1fr) ;
+    grid-template-columns: repeat(3, 1fr);
   }
-  .button-container div{
+
+  .button-container div {
     font-size: 14px;
     padding: 10px;
   }
 }
-
